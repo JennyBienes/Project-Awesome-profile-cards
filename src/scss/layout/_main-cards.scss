@@ -1,0 +1,15 @@
+.main__cards {
+  height: 475px;
+  background: rgb(221, 233, 237);
+  background: linear-gradient(
+    0deg,
+    rgba(221, 233, 237, 1) 0%,
+    rgba(191, 205, 208, 1) 100%
+  );
+}
+.main__cards--section {
+  width: 240px;
+  height: 329px;
+  margin: 88px auto 40px auto;
+  background-color: $whitetwo;
+}
