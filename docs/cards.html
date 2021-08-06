@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adalab Web Starter Kit</title>
+  <script src="https://kit.fontawesome.com/adcd08db79.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+</head>
+
+<body>
+  
+  <main class="main__cards">
+      <button><i class="far fa-trash-alt"> Reset</i></button>
+      <section class="main__cards--section">
+          <h1 class="main__cards--section__title1">Nombre Apellido</h1>
+          <h2 class="main__cards--section__title2">Front-end developer</h2>
+          <img class="main__cards--section__img" src="" alt="profile-image" />
+          <nav>
+              <ul class="main__cards--section__links">
+                  <li><a href=""><i class="fas fa-mobile-alt"></i></a></li>
+                  <li><a href=""><i class="far fa-envelope"></i></a></li>
+                  <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href=""><i class="fab fa-github-alt"></i></a></li>
+              </ul>
+          </nav>
+      </section>
+  </main>
+  <section>
+    <form action="#" class="form">
+      <fieldset class="form__section">
+        <!-- <fieldset> -->
+        <div class="section__title">
+          <i class="far fa-object-ungroup"></i>
+          <h2 class="title">Diseña</h2>
+          <i class="fas fa-chevron-down arrow"></i>
+        </div>
+        <!-- </fieldset> -->
+
+        <label for=""> Colores </label>
+      </fieldset>
+      <fieldset class="form__section">
+        <!-- <fieldset> -->
+        <div class="section__title">
+          <i class="far fa-keyboard"></i>
+          <h2 class="title">Rellena</h2>
+          <i class="fas fa-chevron-down arrow"></i>
+        </div>
+        <!-- </fieldset> -->
+
+        <label for="name" class="label">Nombre completo</label>
+        <input
+          type="text"
+          placeholder="Ej. sally jill"
+          name="name"
+          id="name"
+          class="input"
+        />
+        <label for="work" class="label">Puesto</label>
+        <input
+          type="text"
+          placeholder="Ej. Front-end unicorn"
+          name="work"
+          id="work"
+          class="input"
+        />
+        <label for="image" class="label">Imagen de perfil</label>
+        <button class="image__button">Añadir imagen</button>
+        <input type="checkbox" name="image" id="image" class="checkbox__image" />
+        <label for="email" class="label">Email</label>
+        <input
+          type="email"
+          placeholder="Ej. sally-hill@gmail.com "
+          name="email"
+          id="email"
+          class="input"
+        />
+        <label for="phone" class="label">Teléfono</label>
+        <input
+          type="tel"
+          placeholder="Ej: 555-55-55-55 "
+          name="phone"
+          id="phone"
+          class="input"
+        />
+        <label for="linkedin" class="label">Linkedin</label>
+        <input
+          type="text"
+          placeholder="Ej. linkedin.com/in/sally.hill"
+          name="linkedin"
+          id="linkedin"
+          class="input"
+        />
+        <label for="github" class="label">Github</label>
+        <input
+          type="text"
+          placeholder="Ej: @sally-hill"
+          name="github"
+          id="github"
+          class="input"
+        />
+      </fieldset>
+      <fieldset class="form__section">
+        <!-- <fieldset> -->
+        <div class="section__title">
+          <i class="fas fa-share-alt"></i>
+          <h2 class="title">Comparte</h2>
+          <i class="fas fa-chevron-down arrow"></i>
+        </div>
+        <!-- </fieldset> -->
+
+        <button class="button__card">
+          <i class="far fa-address-card"></i> Crear tarjeta
+        </button>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+      <p>Awesome profile-cards &copy; 2021</p>
+      <a href="https://adalab.es/" target="_blank"><img src=".assets/images/logo-adalab.png" alt="Adalab"
+              title="go to Adalab" /></a>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
