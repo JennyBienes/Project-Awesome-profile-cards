@@ -12,4 +12,47 @@
   height: 329px;
   margin: 88px auto 40px auto;
   background-color: $whitetwo;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+  .main__cards--section__title1 {
+    font-family: $montserratbold;
+    font-size: 18px;
+    font-weight: 900;
+    color: $darkgreenblue;
+    text-transform: capitalize;
+    padding: 21px 14px 4px 20px;
+  }
+  .main__cards--section__title2 {
+    font-family: $montserratreg;
+    font-size: 16px;
+    font-weight: 500;
+    color: $gunmetal;
+    padding: 0px 52px 10px 20px;
+  }
+  .main__cards--section__img {
+    background-color: $dirtyblue;
+    width: 240px;
+    height: 200px;
+  }
+  .main__cards--section__links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .main__cards--section__links--item {
+    display: block;
+    text-decoration: none;
+    color: $darkgreenblue;
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    border: solid 2px $hospitalgreen;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 1.75;
+    margin: 5px;
+  }
 }
