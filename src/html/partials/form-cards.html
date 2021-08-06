@@ -1,6 +1,6 @@
 <section>
-  <form action="#">
-    <fieldset>
+  <form action="#" class="form">
+    <fieldset class="form__section">
       <include
         src="./colapsable.html"
         iconStart="far fa-object-ungroup"
@@ -9,36 +9,75 @@
       ></include>
       <label for=""> Colores </label>
     </fieldset>
-    <fieldset>
+    <fieldset class="form__section">
       <include
         src="./colapsable.html"
         iconStart="far fa-keyboard"
         title="Rellena"
         iconEnd="fas fa-chevron-down"
       ></include>
-      <label for="name">Nombre completo</label>
-      <input type="text" placeholder="Ej. sally jill" name="name" />
-      <label for="">Puesto</label>
-      <input type="text" placeholder="Ej. Front-end unicorn" />
-      <label for="">Imagen de perfil</label>
-      (botton)
-      <label for="">Email</label>
-      <input type="email" placeholder="Ej. sally-hill@gmail.com " />
-      <label for="">Teléfono</label>
-      <input type="tel" placeholder="Ej: 555-55-55-55 " />
-      <label for="">Linkedin</label>
-      <input type="text" placeholder="Ej. linkedin.com/in/sally.hill" />
-      <label for="">Github</label>
-      <input type="text" placeholder="Ej: @sally-hill" />
+      <label for="name" class="label">Nombre completo</label>
+      <input
+        type="text"
+        placeholder="Ej. sally jill"
+        name="name"
+        id="name"
+        class="input"
+      />
+      <label for="work" class="label">Puesto</label>
+      <input
+        type="text"
+        placeholder="Ej. Front-end unicorn"
+        name="work"
+        id="work"
+        class="input"
+      />
+      <label for="image" class="label">Imagen de perfil</label>
+      <button class="image__button">Añadir imagen</button>
+      <input type="checkbox" name="image" id="image" class="checkbox__image" />
+      <label for="email" class="label">Email</label>
+      <input
+        type="email"
+        placeholder="Ej. sally-hill@gmail.com "
+        name="email"
+        id="email"
+        class="input"
+      />
+      <label for="phone" class="label">Teléfono</label>
+      <input
+        type="tel"
+        placeholder="Ej: 555-55-55-55 "
+        name="phone"
+        id="phone"
+        class="input"
+      />
+      <label for="linkedin" class="label">Linkedin</label>
+      <input
+        type="text"
+        placeholder="Ej. linkedin.com/in/sally.hill"
+        name="linkedin"
+        id="linkedin"
+        class="input"
+      />
+      <label for="github" class="label">Github</label>
+      <input
+        type="text"
+        placeholder="Ej: @sally-hill"
+        name="github"
+        id="github"
+        class="input"
+      />
     </fieldset>
-    <fieldset>
+    <fieldset class="form__section">
       <include
         src="./colapsable.html"
         iconStart="fas fa-share-alt"
         title="Comparte"
         iconEnd="fas fa-chevron-down"
       ></include>
-      <button><i class="far fa-address-card"></i> Crear tarjeta</button>
+      <button class="button__card">
+        <i class="far fa-address-card"></i> Crear tarjeta
+      </button>
     </fieldset>
   </form>
 </section>
