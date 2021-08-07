@@ -35,16 +35,22 @@
   border: solid 1.6px;
   color: $dullorange;
   box-sizing: border-box;
-  display:inline-flex;
-  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
+.icon__designs {
+  vertical-align: text-bottom;
+}
 .far-fa-object-ungroup {
   width: 32px;
   height: 26px;
   color: $dullorange;
   font-family: FontAwesome5Pro;
   font-size: 22.4px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .far-fa-keyboard {
   width: 32px;
@@ -52,67 +58,71 @@
   color: $dullorange;
   font-family: FontAwesome5Pro;
   font-size: 22.4px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.fas-fa-share-alt{
-    width: 25px;
-    height: 26px;
-    color: $dullorange;
-    font-family: FontAwesome5ProSolid;
-    font-size: 22.4px; 
-}  
-.Designs{
-    width:48.5px;
-    height:22px;
-    font-family:$mainfont;
-    font-size:12.8px;
-    color:$gunmetal;
-    text-align: center;
+.fas-fa-share-alt {
+  width: 25px;
+  height: 26px;
+  color: $dullorange;
+  font-family: FontAwesome5ProSolid;
+  font-size: 22.4px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.Fill{
-    width:50px;
-    height:22px;
-    font-family:$mainfont;
-    font-size:12.8px;
-    color:$gunmetal;
-    text-align: center; 
+.Designs {
+  width: 48.5px;
+  height: 22px;
+  font-family: $mainfont;
+  font-size: 12.8px;
+  color: $gunmetal;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.Share{
-    width:60px;
-    height:22px;
-    font-family:$mainfont;
-    font-size:12.8px;
-    color:$gunmetal;
-    text-align: center;  
+.Fill {
+  width: 50px;
+  height: 22px;
+  font-family: $mainfont;
+  font-size: 12.8px;
+  color: $gunmetal;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.main__icon--designs{
-    width:60px;
-    height:48.8px;
+.Share {
+  width: 60px;
+  height: 22px;
+  font-family: $mainfont;
+  font-size: 12.8px;
+  color: $gunmetal;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.main__icon--fill{
-    width:60px;
-    height:48.8px;
+
+.main__landing--button {
+  width: 129px;
+  height: 42px;
+  margin: 38px 75px 0 65px;
+  padding: 10px 20px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 21px;
+  background-color: $dirtyblue;
 }
-.main__icon--share{
-    width:60px;
-    height:48.8px;
+.text__button {
+  width: 89px;
+  height: 22px;
+  font-family: $mainfont;
+  font-size: 16px;
+  font-weight: 600;
+  color: $whitetwo;
+  text-transform: uppercase;
+  text-align: center;
 }
-.main__landing--button{
-    width:129px;
-    height:42px;
-    margin:38px 75px 0 65px;
-    padding:10px 20px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    border-radius: 21px;
-    background-color:$dirtyblue;
-}
-.text__button{
-    width:89px;
-    height:22px;
-    font-family:$mainfont;
-    font-size: 16px;
-    font-weight: 600;
-    color:$whitetwo;
-    text-transform: uppercase;
-    text-align:center;
-}  
