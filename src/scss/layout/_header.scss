@@ -1,9 +1,16 @@
 .header {
   background-color: $whitefour;
+  width:100%;
+}
+.header__width{
+  width:100%;
 }
 
 .cards {
-  margin: 95px 35px 35px 35px;
+  margin-top: 93px;
+  margin-bottom: 40px;
+  margin-left:50%;
+  transform: translate(-50%);
   width: 250px;
   height: 64px;
 }
