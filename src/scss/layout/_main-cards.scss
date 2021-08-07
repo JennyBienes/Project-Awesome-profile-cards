@@ -7,27 +7,56 @@
     rgba(191, 205, 208, 1) 100%
   );
 }
+
+.main__cards--button {
+  width: 75px;
+  height: 30px;
+  border-radius: 22px;
+  font-family: $opensansreg;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $gunmetal;
+  background-color: $bluesilver;
+  border: solid 1px $whitetwo;
+  margin: 38px 200px 0px 45px;
+}
 .main__cards--section {
   width: 240px;
   height: 329px;
-  margin: 88px auto 40px auto;
+  margin: 20px auto 40px auto;
   background-color: $whitetwo;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
   border-radius: 2px;
+  display: grid;
+  .grid-sidebar {
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    grid-template-rows: 17px 20px 20px 6px;
+    row-gap: 4px;
+  }
+  .main__cards--section__sidebar {
+    background-color: $dirtyblue;
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
   .main__cards--section__title1 {
     font-family: $montserratbold;
     font-size: 18px;
     font-weight: 900;
     color: $darkgreenblue;
     text-transform: capitalize;
-    padding: 21px 14px 4px 20px;
+    padding: 21px 14px 4px 15px;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
   .main__cards--section__title2 {
     font-family: $montserratreg;
     font-size: 16px;
     font-weight: 500;
     color: $gunmetal;
-    padding: 0px 52px 10px 20px;
+    padding: 0px 52px 10px 15px;
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
   .main__cards--section__img {
     background-color: $dirtyblue;
