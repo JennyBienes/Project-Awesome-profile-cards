@@ -1,0 +1,83 @@
+<section>
+  <form action="#" class="form">
+    <fieldset class="form__section">
+      <include
+        src="./colapsable.html"
+        iconStart="far fa-object-ungroup"
+        title="Diseña"
+        iconEnd="fas fa-chevron-down"
+      ></include>
+      <label for=""> Colores </label>
+    </fieldset>
+    <fieldset class="form__section">
+      <include
+        src="./colapsable.html"
+        iconStart="far fa-keyboard"
+        title="Rellena"
+        iconEnd="fas fa-chevron-down"
+      ></include>
+      <label for="name" class="label">Nombre completo</label>
+      <input
+        type="text"
+        placeholder="Ej. sally jill"
+        name="name"
+        id="name"
+        class="input"
+      />
+      <label for="work" class="label">Puesto</label>
+      <input
+        type="text"
+        placeholder="Ej. Front-end unicorn"
+        name="work"
+        id="work"
+        class="input"
+      />
+      <label for="image" class="label">Imagen de perfil</label>
+      <button class="image__button">Añadir imagen</button>
+      <input type="checkbox" name="image" id="image" class="checkbox__image" />
+      <label for="email" class="label">Email</label>
+      <input
+        type="email"
+        placeholder="Ej. sally-hill@gmail.com "
+        name="email"
+        id="email"
+        class="input"
+      />
+      <label for="phone" class="label">Teléfono</label>
+      <input
+        type="tel"
+        placeholder="Ej: 555-55-55-55 "
+        name="phone"
+        id="phone"
+        class="input"
+      />
+      <label for="linkedin" class="label">Linkedin</label>
+      <input
+        type="text"
+        placeholder="Ej. linkedin.com/in/sally.hill"
+        name="linkedin"
+        id="linkedin"
+        class="input"
+      />
+      <label for="github" class="label">Github</label>
+      <input
+        type="text"
+        placeholder="Ej: @sally-hill"
+        name="github"
+        id="github"
+        class="input"
+      />
+    </fieldset>
+    <fieldset class="form__section">
+      <include
+        src="./colapsable.html"
+        iconStart="fas fa-share-alt"
+        title="Comparte"
+        iconEnd="fas fa-chevron-down"
+      ></include>
+      <button class="button__card">
+        <i class="far fa-address-card"></i> Crear tarjeta
+      </button>
+    </fieldset>
+  </form>
+</section>

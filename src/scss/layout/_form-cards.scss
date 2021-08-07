@@ -1,0 +1,68 @@
+.form {
+  margin: 27px 20px 30px;
+  font-family: $mainfont;
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 7px;
+    margin: 30px 0;
+    .section__title {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 18px;
+      grid-column: span 2;
+      text-transform: uppercase;
+      color: $gunmetal;
+      .arrow {
+        flex: 2;
+        text-align: end;
+      }
+      .title {
+        padding: 0 10px;
+      }
+    }
+    .label {
+      padding-top: 13px;
+      font-size: 14px;
+      color: $darkgreenblue;
+      grid-column: span 2;
+    }
+    .input {
+      padding: 10px;
+      border: solid 1px $hospitalgreen;
+      grid-column: span 2;
+      .input::placeholder {
+        font-family: $mainfont;
+      }
+    }
+    .image__button {
+      width: 140px;
+      height: 30px;
+      font-size: 14px;
+      font-family: $mainfont;
+      color: #ffffff;
+      background-color: $dullorange;
+      border: none;
+      border-radius: 3px;
+    }
+    .checkbox__image {
+      width: 30px;
+      height: 30px;
+    }
+    .button__card {
+      background-color: $dullorange;
+      width: 199px;
+      height: 50px;
+      font-size: 18px;
+      font-family: $mainfont;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      grid-column: span 2;
+      margin: 30px auto;
+    }
+  }
+}
