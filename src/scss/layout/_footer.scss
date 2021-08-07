@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $whitetwo;
+  border: 1px solid #d8d8d8;
+
+  &__copyright {
+    color: $brownishgrey;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $mainfont;
+    margin-top: 18px;
+  }
+  &__image {
+    width: 103px;
+    height: 40px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+}
