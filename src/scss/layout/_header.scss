@@ -1,16 +1,18 @@
 .header {
   background-color: $whitefour;
-  width:100%;
-}
-.header__width{
-  width:100%;
+  display: flex;
+  justify-content: center;
 }
 
 .cards {
   margin-top: 93px;
   margin-bottom: 40px;
-  margin-left:50%;
-  transform: translate(-50%);
   width: 250px;
   height: 64px;
+  @media all and (min-width: 768px) {
+    margin-top: 350px;
+    margin-bottom: 31px;
+    width: 419px;
+    height: 105px;
+  }
 }
