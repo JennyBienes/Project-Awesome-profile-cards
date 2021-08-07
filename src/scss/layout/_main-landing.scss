@@ -18,6 +18,8 @@
   width: 264.8px;
   height: 38.4px;
   margin-left: 50%;
+  margin-bottom: 17.8px;
+  line-height: 15px;
   transform: translate(-50%);
   font-family: $mainfont;
   font-size: 12.8px;
@@ -29,74 +31,40 @@
   height: 73.8px;
   margin-left: 50%;
   transform: translate(-50%);
-  padding: 15px 20px 9.8px 20px;
-  opacity: 0.21;
   border-radius: 4px;
   border: solid 1.6px;
   color: $dullorange;
   box-sizing: border-box;
   display: inline-flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  opacity: 1;
 }
 .icon__designs {
+  width: 250px;
+  font-size: 22.4px;
+  margin-top: 15px;
   vertical-align: text-bottom;
-}
-.far-fa-object-ungroup {
-  width: 32px;
-  height: 26px;
-  color: $dullorange;
-  font-family: FontAwesome5Pro;
-  font-size: 22.4px;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  opacity: none;
 }
-.far-fa-keyboard {
-  width: 32px;
-  height: 26px;
-  color: $dullorange;
-  font-family: FontAwesome5Pro;
-  font-size: 22.4px;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
+
+.text__designs {
+  vertical-align: text-bottom;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 1;
+  margin-bottom: 17.8px;
+  opacity: none;
 }
-.fas-fa-share-alt {
-  width: 25px;
-  height: 26px;
-  color: $dullorange;
-  font-family: FontAwesome5ProSolid;
-  font-size: 22.4px;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.Designs {
-  width: 48.5px;
-  height: 22px;
-  font-family: $mainfont;
-  font-size: 12.8px;
-  color: $gunmetal;
-  text-align: center;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.Fill {
-  width: 50px;
-  height: 22px;
-  font-family: $mainfont;
-  font-size: 12.8px;
-  color: $gunmetal;
-  text-align: center;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.Share {
+.desings {
   width: 60px;
   height: 22px;
+  font-weight: 800;
   font-family: $mainfont;
   font-size: 12.8px;
   color: $gunmetal;
@@ -104,6 +72,39 @@
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  opacity: none;
+}
+.fill {
+  width: 60px;
+  height: 22px;
+  font-weight: 800;
+  font-family: $mainfont;
+  font-size: 12.8px;
+  color: $gunmetal;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  opacity: 1;
+}
+.share {
+  width: 60px;
+  height: 22px;
+  font-weight: 800;
+  font-family: $mainfont;
+  font-size: 12.8px;
+  color: $gunmetal;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  opacity: 1;
 }
 
 .main__landing--button {
@@ -114,8 +115,12 @@
   margin-left: 50%;
   transform: translate(-50%);
   border-radius: 21px;
+  border: none;
+  text-decoration: none;
   background-color: $dirtyblue;
+  border-color: $dirtyblue;
 }
+
 .text__button {
   width: 89px;
   height: 22px;
@@ -125,4 +130,7 @@
   color: $whitetwo;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none;
 }
