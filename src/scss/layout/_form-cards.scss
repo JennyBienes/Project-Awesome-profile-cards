@@ -36,6 +36,55 @@
         font-family: $mainfont;
       }
     }
+    .palette {
+      width: 30px;
+      height: 25px;
+    }
+    .first_palette {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 0;
+
+      .colorOne {
+        background-color: $darkgreenblue;
+      }
+      .colorTwo {
+        background-color: $dirtyblue;
+      }
+      .colorThree {
+        background-color: $hospitalgreen;
+      }
+    }
+    .second_palette {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 0;
+
+      .colorOne {
+        background-color: #420101;
+      }
+      .colorTwo {
+        background-color: #bd1010;
+      }
+      .colorThree {
+        background-color: #e95626;
+      }
+    }
+    .third_palette {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 0;
+      .colorOne {
+        background-color: #3e5b65;
+      }
+      .colorTwo {
+        background-color: #eab052;
+      }
+      .colorThree {
+        background-color: #a0c0cf;
+      }
+    }
+
     .image__button {
       width: 140px;
       height: 30px;
@@ -46,9 +95,10 @@
       border: none;
       border-radius: 3px;
     }
-    .checkbox__image {
+    .preload_image {
       width: 30px;
       height: 30px;
+      border: solid 1px $hospitalgreen;
     }
     .button__card {
       background-color: $dullorange;
