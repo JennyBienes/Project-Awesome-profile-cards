@@ -40,6 +40,9 @@
       width: 30px;
       height: 25px;
     }
+    .input_palette {
+      margin-right: 10px;
+    }
     .first_palette {
       display: flex;
       justify-content: flex-end;
@@ -84,9 +87,7 @@
         background-color: #a0c0cf;
       }
     }
-    .input_palette {
-      margin-right: 10px;
-    }
+
     .image__button {
       width: 140px;
       height: 30px;
