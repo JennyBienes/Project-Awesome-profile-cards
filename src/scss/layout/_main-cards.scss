@@ -6,6 +6,16 @@
     rgba(221, 233, 237, 1) 0%,
     rgba(191, 205, 208, 1) 100%
   );
+  @media (min-width: 768px) {
+    height: 812px;
+    width: 329px;
+    border-radius: 8px;
+  }
+  @media (min-width: 1200px) {
+    height: 812px;
+    width: 585px;
+    border-radius: 8px;
+  }
 }
 
 .main__cards--button {
@@ -19,6 +29,12 @@
   background-color: $bluesilver;
   border: solid 1px $whitetwo;
   margin: 38px 200px 0px 45px;
+  @media (min-width: 768px) {
+    margin-top: 173px;
+  }
+  @media (min-width: 1200px) {
+    margin: 173px 200px 0px 173px;
+  }
 }
 .main__cards--section {
   width: 240px;
