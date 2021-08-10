@@ -6,16 +6,19 @@
   &_index {
     display: flex;
     justify-content: center;
+    @media all and (min-width: 768px) {
+      height: 30vh;
+    }
+
     .cards {
       margin-top: 93px;
       margin-bottom: 40px;
       width: 250px;
       height: 63px;
       @media all and (min-width: 768px) {
-        margin-top: 350px;
-        margin-bottom: 31px;
         width: 419px;
         height: 105px;
+        align-items: center;
       }
     }
   }
