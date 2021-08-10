@@ -15,6 +15,9 @@
   font-weight: 900;
   text-align: center;
   color: $dullorange;
+  @media screen and (min:768px) {
+    font-size:24px;
+    }
 }
 .main__landing--subtitle {
   width: 264.8px;
@@ -25,6 +28,9 @@
   font-size: 12.8px;
   text-align: center;
   color: $darkgreenblue;
+  @media screen and (min:768px) {
+    font-size:16px;
+    }
 }
 .main__landing--rectangule {
   width: 268px;
