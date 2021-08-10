@@ -14,38 +14,57 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body>
-    
-    <main>
-      <img
-        src=".assets/images/logo-awesome-profile-cards.svg"
-        alt="Awsome profile-card"
-      />
-      <h1>Crea tu tarejta de visita</h1>
-      <h2>Crea mejores contactos profesionales de forma fácil y cómoda</h2>
-      <section>
-        <i class="far fa-object-ungroup"></i>
-        <i class="far fa-keyboard"></i>
-        <i class="fas fa-share-alt"></i>
-      </section>
-      <button>Comenzar<a href="./cards.html"></a></button>
-    </main>
+    <header class="header_index header">
+      <div>
+        <a href="http://beta.adalab.es/project-promo-n-module-2-team-2/">
+          <img
+            class="cards"
+            src="./assets/images/logo-awesome-profile-cards.svg"
+            alt="Logo de awesome profile cards"
+            title="Web del proyecto"
+        /></a>
+      </div>
+    </header>
 
-    <footer>
-        <p>Awesome profile-cards &copy; 2021</p>
-        <a href="https://adalab.es/" target="_blank"><img src=".assets/images/logo-adalab.png" alt="Adalab"
-                title="go to Adalab" /></a>
+    <main>
+      <section class="main__landing--box">
+        <h1 class="main__landing--title">Crea tu tarjeta de visita</h1>
+        <h3 class="main__landing--subtitle">Crea mejores contactos profesionales de forma fácil y cómoda</h3>
+        <div class="main__landing--rectangule">
+          <article class="icon__designs">
+            <i class="far fa-object-ungroup "></i>
+            <i class="far fa-keyboard "></i>
+            <i class="fas fa-share-alt "></i>
+          </article>
+          <article class="text__designs">
+            <h3 class="desings">Diseña</h3>
+            <h3 class="fill">Rellena</h3>
+            <h3 class="share">Comparte</h3>
+          </article>
+
+        </div>
+        <button class="main__landing--button">
+          <a href="./cards.html" class="text__button"> comenzar</a>
+        </button>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">Awesome profile-cards &copy; 2021</p>
+      <a href="https://adalab.es/" target="_blank"
+        ><img
+          class="footer__image"
+          src="./assets/images/logo-adalab.png"
+          alt="Adalab"
+          title="go to Adalab"
+        />
+      </a>
     </footer>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
