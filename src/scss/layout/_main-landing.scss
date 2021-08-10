@@ -1,13 +1,16 @@
 .main__landing--box {
   background-color: $whitefour;
-  height: 55vh;
+  height: 48.7vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  @media screen and (min: 768px) {
-    height: 60%;
+  @media (min-width: 768px) {
+    height: 50vh;
+  }
+  @media (min-width: 1024px) {
+   height: 49.7vh ;
   }
 }
 .main__landing--title {
@@ -18,8 +21,10 @@
   font-weight: 900;
   text-align: center;
   color: $dullorange;
-  @media screen and (min: 768px) {
+  @media (min-width: 768px) {
     font-size: 24px;
+    margin-top: 3.1vh;
+    width: 278px;
   }
 }
 .main__landing--subtitle {
@@ -31,7 +36,7 @@
   font-size: 12.8px;
   text-align: center;
   color: $darkgreenblue;
-  @media screen and (min: 768px) {
+  @media (min-width: 768px) {
     font-size: 16px;
   }
 }
@@ -47,6 +52,11 @@
   justify-content: space-around;
   align-items: center;
   opacity: 1;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 325px;
+    height: 86px;
+  }
 }
 .icon__designs {
   width: 250px;
@@ -57,6 +67,10 @@
   flex-direction: row;
   justify-content: space-around;
   opacity: none;
+  @media (min-width: 768px) {
+    font-size: 28px;
+    width: 300px;
+  }
 }
 
 .text__designs {
@@ -68,6 +82,7 @@
   margin-bottom: 17.8px;
   opacity: none;
 }
+
 .desings {
   width: 60px;
   height: 22px;
@@ -82,6 +97,10 @@
   margin-left: 12px;
   margin-right: 12px;
   opacity: none;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 75px;
+  }
 }
 .fill {
   width: 60px;
@@ -97,6 +116,10 @@
   margin-left: 12px;
   margin-right: 12px;
   opacity: 1;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 75px;
+  }
 }
 .share {
   width: 60px;
@@ -112,6 +135,10 @@
   margin-left: 12px;
   margin-right: 12px;
   opacity: 1;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 75px;
+  }
 }
 
 .main__landing--button {
@@ -124,6 +151,15 @@
   text-decoration: none;
   background-color: $dirtyblue;
   border-color: $dirtyblue;
+  @media (min-width: 768px) {
+    margin-top: 18vh;
+    margin-bottom: 5.9vh;
+  }
+  @media (min-width: 1024px) {
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+  }
+  
 }
 
 .text__button {
