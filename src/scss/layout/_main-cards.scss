@@ -13,6 +13,10 @@
     rgba(221, 233, 237, 1) 0%,
     rgba(191, 205, 208, 1) 100%
   );
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  justify-self: left;
+
   @media (min-width: 768px) {
     height: 95%;
     width: 90%;
@@ -37,14 +41,8 @@
   color: $gunmetal;
   background-color: $bluesilver;
   border: solid 1px $whitetwo;
-  margin: 38px 200px 0px 45px;
-
-  @media (min-width: 768px) {
-    margin-top: 173px;
-  }
-  @media (min-width: 1200px) {
-    margin: 173px 200px 0px 173px;
-  }
+  margin: auto auto 0px 0px;
+  grid-column: 2/3;
 }
 .main__cards--section {
   width: 240px;
@@ -54,6 +52,7 @@
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
   border-radius: 2px;
   display: grid;
+  grid-column: 2/3;
   .grid-sidebar {
     display: grid;
     grid-template-columns: 5px 1fr;
