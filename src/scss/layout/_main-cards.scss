@@ -31,13 +31,14 @@
   width: 75px;
   height: 30px;
   border-radius: 22px;
-  font-family: $opensansreg;
   font-size: 12px;
+  font-family: $opensansreg;
   text-transform: uppercase;
   color: $gunmetal;
   background-color: $bluesilver;
   border: solid 1px $whitetwo;
   margin: 38px 200px 0px 45px;
+
   @media (min-width: 768px) {
     margin-top: 173px;
   }
