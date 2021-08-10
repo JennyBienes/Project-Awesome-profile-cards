@@ -1,3 +1,10 @@
+.main_grid {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1 fr 1 fr;
+  }
+}
+
 .main__cards {
   height: 475px;
   background: rgb(221, 233, 237);
@@ -7,14 +14,16 @@
     rgba(191, 205, 208, 1) 100%
   );
   @media (min-width: 768px) {
-    height: 812px;
-    width: 329px;
+    height: 95%;
+    width: 90%;
     border-radius: 8px;
+    grid-column: 2 / 3;
+    grid-row: span 1 / 2;
+    margin: 23px 40px 21px auto;
   }
   @media (min-width: 1200px) {
-    height: 812px;
-    width: 585px;
     border-radius: 8px;
+    margin-left: 0px;
   }
 }
 
