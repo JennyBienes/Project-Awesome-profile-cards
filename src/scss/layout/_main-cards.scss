@@ -1,4 +1,10 @@
 .main_grid {
+  background: rgb(245, 245, 245);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 1) 18%
+  );
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1 fr 1 fr;
