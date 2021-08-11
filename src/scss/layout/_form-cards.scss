@@ -103,7 +103,24 @@
         background-color: #a0c0cf;
       }
     }
-
+    // .image__button {
+    //   display: none;
+    // }
+    // .label_button {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: flex-start;
+    //   width: 140px;
+    //   // height: 30px;
+    //   font-size: 14px;
+    //   font-family: $mainfont;
+    //   text-align: center;
+    //   color: #ffffff;
+    //   background-color: $dullorange;
+    //   border: none;
+    //   border-radius: 3px;
+    //   padding: 10px;
+    // }
     .image__button {
       width: 140px;
       height: 30px;
@@ -114,10 +131,13 @@
       border: none;
       border-radius: 3px;
     }
+
     .preload_image {
       width: 30px;
       height: 30px;
       border: solid 1px $hospitalgreen;
+      grid-column: 2 / 3;
+      grid-row: span 2;
     }
     .button__card {
       background-color: $dullorange;
