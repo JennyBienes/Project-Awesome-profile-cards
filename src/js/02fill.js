@@ -10,6 +10,18 @@ function handleName() {
 }
 nameElement.addEventListener("change", handleName);
 
+//Acción para trabajo//
+const jobElement = document.querySelector(".js_input_job");
+const jobPreviewElement = document.querySelector(".js_job");
+function handleJob() {
+  if (jobElement.value !== "") {
+    console.log(jobElement.getAttribute("href"));
+    jobPreviewElement.innerHTML = jobElement.value;
+  }
+}
+
+jobElement.addEventListener("change", handleJob);
+
 //Acción para email//
 const emailElement = document.querySelector(".js_input_mail");
 const emailPreviewElement = document.querySelector(".js_mail");
