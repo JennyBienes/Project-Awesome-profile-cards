@@ -32,26 +32,50 @@
 
     <main class="main_grid">
       <section class="main__cards">
+        <button class="main__cards--button">
+          <i class="far fa-trash-alt"></i> Reset
+        </button>
+        <section class="main__cards--section">
+          <div class="grid-sidebar">
+            <div class="main__cards--section__sidebar"></div>
+            <h1 class="main__cards--section__title1 js_name_cards">
+              Nombre Apellido
+            </h1>
+            <h2 class="main__cards--section__title2 js_job">Front-end developer</h2>
+          </div>
 
-          <button class="main__cards--button"><i class="far fa-trash-alt"></i> Reset</button>
-          <section class="main__cards--section">
-              <div class="grid-sidebar">
-                  <div class="main__cards--section__sidebar"></div>
-                  <h1 class="main__cards--section__title1">Nombre Apellido</h1>
-                  <h2 class="main__cards--section__title2">Front-end developer</h2>
-              </div>
-
-              <img class="main__cards--section__img" src="./assets/images/jabbascript-social.jpg" alt="profile-image" />
-              <nav>
-                  <ul class="main__cards--section__links">
-                      <li><a class="main__cards--section__links--item" href=""><i class="fas fa-mobile-alt"></i></a></li>
-                      <li><a class="main__cards--section__links--item" href=""><i class="far fa-envelope"></i></a></li>
-                      <li><a class="main__cards--section__links--item" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                      <li><a class="main__cards--section__links--item" href=""><i class="fab fa-github-alt"></i></a></li>
-                  </ul>
-              </nav>
-          </section>
+          <img
+            class="main__cards--section__img"
+            src="./assets/images/jabbascript-social.jpg"
+            alt="profile-image"
+          />
+          <nav>
+            <ul class="main__cards--section__links">
+              <li>
+                <a class="main__cards--section__links--item" href=""
+                  ><i class="fas fa-mobile-alt"></i
+                ></a>
+              </li>
+              <li>
+                <a class="main__cards--section__links--item js_mail" href=""
+                  ><i class="far fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a class="main__cards--section__links--item" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a class="main__cards--section__links--item" href=""
+                  ><i class="fab fa-github-alt"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </section>
       </section>
+
       <section class="section_form">
         <form action="#" class="form">
           <fieldset class="form__section">
@@ -114,7 +138,7 @@
               placeholder="Ej. sally jill"
               name="name"
               id="name"
-              class="input"
+              class="input js_name"
             />
             <label for="work" class="label">Puesto</label>
             <input
@@ -122,18 +146,22 @@
               placeholder="Ej. Front-end unicorn"
               name="work"
               id="work"
-              class="input"
+              class="input js_input_job"
             />
             <label for="image" class="label">Imagen de perfil</label>
             <button class="image__button">Añadir imagen</button>
             <div class="preload_image"></div>
+            <!-- <p>Imagen de perfil</p>
+            <label for="image" class="label label_button">Añadir imagen </label>
+            <input type="file" class="image__button" />
+            <div class="preload_image"></div> -->
             <label for="email" class="label">Email</label>
             <input
               type="email"
               placeholder="Ej. sally-hill@gmail.com "
               name="email"
               id="email"
-              class="input"
+              class="input js_input_mail"
             />
             <label for="phone" class="label">Teléfono</label>
             <input
