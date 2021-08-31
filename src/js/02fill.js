@@ -52,3 +52,16 @@ function handleLinkedin() {
 
 linkedinElement.addEventListener("change", handleLinkedin);
 
+//Acción para github
+
+const githubElement = document.querySelector(".js_input_github");
+const githubPreviewElement = document.querySelector(".js_github");
+
+function handleGithub() {
+  if (githubElement.value !== "") {
+    githubPreviewElement.setAttribute('href', githubElement.value);
+  
+  }
+}
+
+githubElement.addEventListener("change", handleGithub);
