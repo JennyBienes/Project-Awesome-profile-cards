@@ -22,14 +22,33 @@ function handleJob() {
 
 jobElement.addEventListener("change", handleJob);
 
-//Acción para email//
+//Acción para email
+
 const emailElement = document.querySelector(".js_input_mail");
 const emailPreviewElement = document.querySelector(".js_mail");
+
+
 function handleMail() {
   if (emailElement.value !== "") {
-    console.log(emailElement.getAttribute("href"));
-    emailPreviewElement.getAttribute ('href') += emailElement.value;
+    emailPreviewElement.setAttribute('href', 'mailto:'+ emailElement.value);
+  
   }
 }
 
 emailElement.addEventListener("change", handleMail);
+
+//Acción para linkedin
+
+const linkedinElement = document.querySelector(".js_input_linkedin");
+const linkedinPreviewElement = document.querySelector(".js_linkedin");
+
+
+function handleLinkedin() {
+  if (linkedinElement.value !== "") {
+    linkedinPreviewElement.setAttribute('href', linkedinElement.value);
+  
+  }
+}
+
+linkedinElement.addEventListener("change", handleLinkedin);
+
