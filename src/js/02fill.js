@@ -22,6 +22,19 @@ function handleJob() {
 
 jobElement.addEventListener("change", handleJob);
 
+//accion para el telefono
+
+const phoneElement = document.querySelector(".js_input_phone");
+const phonePreviewElement = document.querySelector(".js_phone");
+
+function handlePhone() {
+  if (phoneElement.value !== "") {
+    phonePreviewElement.setAttribute('href', 'tel:'+githubElement.value);
+  }
+}
+
+phoneElement.addEventListener("change", handlePhone);
+
 //Acción para email
 
 const emailElement = document.querySelector(".js_input_mail");
@@ -44,9 +57,9 @@ const linkedinPreviewElement = document.querySelector(".js_linkedin");
 
 
 function handleLinkedin() {
-  if (linkedinElement.value !== "") {
+  linkedinPreviewElement.event.preventDefault();
+  if (linkedinElement.value === "") {
     linkedinPreviewElement.setAttribute('href', linkedinElement.value);
-  
   }
 }
 
