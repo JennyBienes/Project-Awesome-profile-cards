@@ -22,6 +22,14 @@ function handleJob() {
 
 jobElement.addEventListener("change", handleJob);
 
+//Acción para añadir imagen al clicar botón
+const imageElement = document.querySelector (".js_button");
+const imagePreviewElement = document.querySelector (".js_image");
+function handleClickBtn() {
+  imagePrewiewElement.value = <img src = "./assets/images/jabbascript-social.jpg"></img>
+}
+imageElement.addEventListener ("click", handleClickBtn);
+
 //Acción para email//
 const emailElement = document.querySelector(".js_input_mail");
 const emailPreviewElement = document.querySelector(".js_mail");
