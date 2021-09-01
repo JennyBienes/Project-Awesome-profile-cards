@@ -9,7 +9,7 @@ for (const headerCollapsable of headerCollapsables) {
 
 function handlerCollapsable(ev) {
     const clickedHeader = ev.currentTarget;
-    const clickedContent = clickedHeader.parentNode;
+    const clickedContent = clickedHeader.nextElementSibling;
     console.log(clickedContent);
     clickedContent.classList.toggle('hidden');
 
