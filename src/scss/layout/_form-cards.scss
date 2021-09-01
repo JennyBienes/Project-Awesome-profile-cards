@@ -5,7 +5,7 @@
 }
 
 .form {
-  padding: 0px 20px 30px;
+  padding: 0px 20px ;
   font-family: $mainfont;
   background: rgb(245, 245, 245);
   background: linear-gradient(
@@ -153,5 +153,38 @@
       grid-column: span 2;
       margin: 30px auto;
     }
+  }
+}
+.share__section{
+  margin: 0px 20px 30px 20px;
+  font-family: $opensanssemibold;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .share__section--title{
+    color: $gunmetal;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .share__section--link{
+    color: $dullorange;
+    font-size: 12px;
+    margin: 5px 0px 10px 0px;
+    
+  }
+  .share__section--button{
+    background-color: $azure;
+    font-size: 15px;
+    line-height: 1.5;
+    color: $whitetwo;
+    width: 181px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
   }
 }
