@@ -11,19 +11,17 @@ function handlerCollapsable(ev) {
     const clickedHeader = ev.currentTarget;
     const clickedContent = clickedHeader.nextElementSibling;
     console.log(clickedContent);
-    clickedContent.classList.toggle('hidden');
+    // clickedContent.classList.toggle('hidden');
 
-  
-//     for (const collapsable of contentCollapsable) {
-//         if (clickedContent === collapsable) {
-//             clickedContent.classList.toggle('hidden');
-//             console.log('uy')
-//         } else {
-//             clickedContent.classList.toggle('hidden');
-//             console.log('Ey')
-//     }
-// }
+    for (const collapsable of contentCollapsable) {
+        // debugger;
+          if (clickedContent === collapsable) {
+              collapsable.classList.remove('hidden');
+          } else {
+              collapsable.classList.add('hidden');
+      }
+  }
 
 }
 
-// headerCollapsable.addEventListener('click', handlerCollapsable);
+headerCollapsable.addEventListener('click', handlerCollapsable);
