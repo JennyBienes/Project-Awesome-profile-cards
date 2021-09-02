@@ -10,7 +10,6 @@ for (const headerCollapsable of headerCollapsables) {
 function handlerCollapsable(ev) {
     const clickedHeader = ev.currentTarget;
     const clickedContent = clickedHeader.nextElementSibling;
-    console.log(clickedContent);
     // clickedContent.classList.toggle('hidden');
 
     for (const collapsable of contentCollapsable) {
@@ -21,7 +20,7 @@ function handlerCollapsable(ev) {
               collapsable.classList.add('hidden');
       }
   }
-
 }
 
-headerCollapsable.addEventListener('click', handlerCollapsable);
+
+// headerCollapsable.addEventListener('click', handlerCollapsable);
