@@ -5,6 +5,7 @@
 }
 
 .form {
+  padding: 20px 20px 30px;
   font-family: $mainfont;
   background: rgb(245, 245, 245);
   background: linear-gradient(
@@ -12,148 +13,127 @@
     rgba(245, 245, 245, 1) 0%,
     rgba(255, 255, 255, 1) 18%
   );
+
   @media all and (min-width: 768px) {
     padding: 20px 30px 40px;
   }
-  .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 7px;
-    padding: 30px 0;
-  }
-  .title {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 600;
-    font-size: 18px;
-    grid-column: span 2;
-    text-transform: uppercase;
-    color: $gunmetal;
-    padding: 5px;
-    .arrow {
-      flex: 2;
-      text-align: end;
-    }
-    .title {
-      padding: 0 10px;
-    }
-  }
-  .label {
-    padding-top: 13px;
-    font-size: 14px;
-    color: $darkgreenblue;
-    grid-column: span 2;
-  }
-  .input {
-    padding: 10px;
-    border: solid 1px $hospitalgreen;
-    grid-column: span 2;
-    .input::placeholder {
-      font-family: $mainfont;
-    }
-  }
-  .palette {
-    width: 30px;
-    height: 25px;
-  }
-  .input_palette {
-    margin-right: 10px;
-  }
-  .first_palette {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 0;
 
-    .colorOne {
-      background-color: $darkgreenblue;
-    }
-    .colorTwo {
-      background-color: $dirtyblue;
-    }
-    .colorThree {
-      background-color: $hospitalgreen;
-    }
-  }
-  .second_palette {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 0;
-
-    .colorOne {
-      background-color: #420101;
-    }
-    .colorTwo {
-      background-color: #bd1010;
-    }
-    .colorThree {
-      background-color: #e95626;
-    }
-  }
-  .third_palette {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 0;
-    .colorOne {
-      background-color: #3e5b65;
-    }
-    .colorTwo {
-      background-color: #eab052;
-    }
-    .colorThree {
-      background-color: #a0c0cf;
-    }
-  }
-  // .image__button {
-  //   display: none;
-  // }
-  // .label_button {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: flex-start;
-  //   width: 140px;
-  //   // height: 30px;
-  //   font-size: 14px;
-  //   font-family: $mainfont;
-  //   text-align: center;
-  //   color: #ffffff;
-  //   background-color: $dullorange;
-  //   border: none;
-  //   border-radius: 3px;
-  //   padding: 10px;
-  // }
-  .image__button {
-    width: 140px;
-    height: 30px;
-    font-size: 14px;
+.section__title{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $gunmetal;
+  padding: 5px;
+.arrow{
+  flex: 2;
+  text-align: end;
+}
+.title{
+  padding: 0 10px;
+}
+}
+.div_content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 7px;
+  padding: 30px 0;
+}
+.label{
+  padding-top: 13px;
+  font-size: 14px;
+  color: $darkgreenblue;
+  grid-column: span 2;
+}
+.input{
+  padding: 10px;
+  border: solid 1px $hospitalgreen;
+  grid-column: span 2;
+  .input::placeholder{
     font-family: $mainfont;
-    color: #ffffff;
-    background-color: $dullorange;
-    border: none;
-    border-radius: 3px;
-  }
-
-  .preload_image {
-    width: 30px;
-    height: 30px;
-    border: solid 1px $hospitalgreen;
-    grid-column: 2 / 3;
-    grid-row: span 2;
-  }
-  .button__card {
-    background-color: $dullorange;
-    width: 199px;
-    height: 50px;
-    font-size: 18px;
-    font-family: $mainfont;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #ffffff;
-    border: none;
-    border-radius: 12px;
-    grid-column: span 2;
-    margin: 30px auto;
   }
 }
-.hidden {
-  display: none;
+.palette {
+  width: 30px;
+  height: 25px;
+}
+.input_palette {
+  margin-right: 10px;
+    }
+.first_palette {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 0;
+
+      .colorOne {
+        background-color: $darkgreenblue;
+      }
+      .colorTwo {
+        background-color: $dirtyblue;
+      }
+      .colorThree {
+        background-color: $hospitalgreen;
+      }
+    }
+    .second_palette {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 0;
+
+      .colorOne {
+        background-color: #420101;
+      }
+      .colorTwo {
+        background-color: #bd1010;
+      }
+      .colorThree {
+        background-color: #e95626;
+      }
+    }
+    .third_palette {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px 0;
+      .colorOne {
+        background-color: #3e5b65;
+      }
+      .colorTwo {
+        background-color: #eab052;
+      }
+      .colorThree {
+        background-color: #a0c0cf;
+      }
+    }
+ .image__button {
+      width: 140px;
+      height: 30px;
+      font-size: 14px;
+      font-family: $mainfont;
+      color: #ffffff;
+      background-color: $dullorange;
+      border: none;
+      border-radius: 3px;
+    }
+    .preload_image {
+      width: 30px;
+      height: 30px;
+      border: solid 1px $hospitalgreen;
+      grid-column: 2 / 3;
+      grid-row: span 2;
+    }
+    .button__card {
+      background-color: $dullorange;
+      width: 199px;
+      height: 50px;
+      font-size: 18px;
+      font-family: $mainfont;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      grid-column: span 2;
+      margin: 30px auto;
+    }
 }

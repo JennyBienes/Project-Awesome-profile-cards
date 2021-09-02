@@ -11,9 +11,11 @@ function handlerCollapsable(ev) {
     const clickedHeader = ev.currentTarget;
     const clickedContent = clickedHeader.nextElementSibling;
     // clickedContent.classList.toggle('hidden');
+    console.log(clickedHeader);
+    console.log(clickedContent);
 
     for (const collapsable of contentCollapsable) {
-        // debugger;
+        debugger;
           if (clickedContent === collapsable) {
               collapsable.classList.remove('hidden');
           } else {
