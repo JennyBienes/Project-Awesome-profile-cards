@@ -15,11 +15,13 @@ function handlerCollapsable(ev) {
     console.log(clickedContent);
 
     for (const collapsable of contentCollapsable) {
-        debugger;
+        // debugger;
           if (clickedContent === collapsable) {
-              collapsable.classList.remove('hidden');
+              collapsable.classList.toggle('hidden');
+               collapsable.classList.toggle('div_content');
           } else {
               collapsable.classList.add('hidden');
+              collapsable.classList.remove('div_content');
       }
   }
 }
