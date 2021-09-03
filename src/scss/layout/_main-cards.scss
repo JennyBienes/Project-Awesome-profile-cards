@@ -80,6 +80,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
   }
+
   .main__cards--section__title2 {
     font-family: $montserratreg;
     font-size: 16px;
@@ -114,5 +115,32 @@
     text-align: center;
     line-height: 1.75;
     margin: 5px;
+  }
+}
+
+.palette1 {
+  .main__cards--section__title1 {
+    color: $darkgreenblue;
+  }
+  .main__cards--section__sidebar {
+    background-color: $dirtyblue;
+  }
+}
+
+.palette2 {
+  .main__cards--section__title1 {
+    color: #420101;
+  }
+  .main__cards--section__sidebar {
+    background-color: #bd1010;
+  }
+}
+
+.palette3 {
+  .main__cards--section__title1 {
+    color: #3e5b65;
+  }
+  .main__cards--section__sidebar {
+    background-color: #eab052;
   }
 }
