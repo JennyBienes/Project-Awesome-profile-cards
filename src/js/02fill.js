@@ -26,17 +26,13 @@ jobElement.addEventListener('change', handleJob);
 const inputCardsLinks = document.querySelectorAll('.js_input_link');
 console.log(inputCardsLinks);
 const cardPreviewIcons = document.querySelectorAll('.js-icon-circle');
-const mobileLink = document.getElementById('mobile_link');
-const mailLink = document.getElementById('mail_link');
-const linkedinLink = document.getElementById('linkedin_link');
-const githubLink = document.getElementById('github_link');
 
 
 //preventDefault de los enlaces de la tarjeta, hacer solo una funcion y un listener!!!!!
 
 function handleClickCardLinks(event) {
   let iconListened = event.currentTarget;
-  if (iconListened.href === "http://localhost:3000/cards.html") {
+  if (iconListened.href === "http://localhost:3000/cards.html"||iconListened.href === "tel:"||iconListened.href === "mailto:") {
     iconListened = event.preventDefault();
   }
 }
@@ -47,14 +43,17 @@ for (const cardPreviewIcon of cardPreviewIcons) {
 //funcion unica para los links
 
 function handleCardLinks(event) {
-  let linkToWrite = event.currentTarget.value;
-    if (linkToWrite !== '') {
-      mobileLink.setAttribute('href', 'tel:' + linkToWrite);
-      mailLink.setAttribute('href', 'mailto:' + linkToWrite);
-      linkedinLink.setAttribute('href', linkToWrite);
-      githubLink.setAttribute('href', linkToWrite);
+ 
+  for (let index = 0; index < inputCardsLinks.length; index++) {
+    let indexValue = event.currentTarget.value;
+    console.log(indexValue);
+    if (indexValue !== '') {
+       for (const cardPreviewIcon of cardPreviewIcons){
+        const cardPreview = cardPreviewIcon;
+        cardPreview.setAttribute('href', indexValue);
+        }
     }
-
+  }
 }
 for (const inputCardsLink of inputCardsLinks) {
   inputCardsLink.addEventListener('change', handleCardLinks);
