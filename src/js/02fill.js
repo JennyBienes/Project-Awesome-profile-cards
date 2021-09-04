@@ -1,4 +1,3 @@
-'use strict';
 //Acción para el nombre///
 const nameElement = document.querySelector('.js_name');
 const namePreviewElement = document.querySelector('.js_name_cards');
@@ -15,7 +14,6 @@ const jobElement = document.querySelector('.js_input_job');
 const jobPreviewElement = document.querySelector('.js_job');
 function handleJob() {
   if (jobElement.value !== '') {
-    console.log(jobElement.getAttribute('href'));
     jobPreviewElement.innerHTML = jobElement.value;
   }
 }
@@ -25,28 +23,39 @@ jobElement.addEventListener('change', handleJob);
 //ACCIONES PARA LOS LINKS
 
 //variables
-const phoneElement = document.querySelector('.js_input_phone');
-const phonePreviewElement = document.querySelector('.js_phone');
-const emailElement = document.querySelector('.js_input_mail');
-const emailPreviewElement = document.querySelector('.js_mail');
-const linkedinElement = document.querySelector('.js_input_linkedin');
-const linkedinPreviewElement = document.querySelector('.js_linkedin');
-const githubElement = document.querySelector('.js_input_github');
-const githubPreviewElement = document.querySelector('.js_github');
+const inputCardsLinks = document.querySelectorAll('.js_input_links');
+const cardPreviewIcons = document.querySelectorAll('.js-icon-circle');
 
-//accion para el telefono
+//preventDefault de los enlaces de la tarjeta, hacer solo una funcion y un listener!!!!!
 
-function handlePhone() {
-  if (phoneElement.value !== '') {
-    phonePreviewElement.setAttribute('href', 'tel:' + githubElement.value);
+function handleClickCardLinks(event) {
+  let iconListened = event.target;
+  iconListened = event.preventDefault();
+}
+for (const cardPreviewIcon of cardPreviewIcons){ 
+  cardPreviewIcon.addEventListener('click', handleClickCardLinks);}
+ 
+
+//funcion unica para los links
+debugger;
+function handleCardLinks() {
+  for (const inputCardsLink of inputCardsLinks) {
+    let linkToWrite = inputCardsLink.value;
+  }
+
+  if (linkToWrite !== '') {
+    cardPreviewIcons.setAttribute('href', 'tel:' + linkToWrite);
   }
 }
+for (const inputCardsLink of inputCardsLinks){
+  inputCardsLink.addEventListener('change', handleCardLinks);
+}
 
-phoneElement.addEventListener('change', handlePhone);
+//fin de funcion  unica para los links
 
 //Acción para email
 
-function handleMail() {
+/*function handleMail() {
   if (emailElement.value !== '') {
     emailPreviewElement.setAttribute('href', 'mailto:' + emailElement.value);
   }
@@ -70,31 +79,4 @@ function handleGithub() {
     githubPreviewElement.setAttribute('href', githubElement.value);
   }
 }
-githubElement.addEventListener('change', handleGithub);
-
-//preventDefault de los enlaces de la tarjeta, hacer solo una funcion y un listener!!!!!
-
-function handleClickCardLinks(event) {
-  if (phoneElement.value === '') {
-    event.preventDefault();
-  }
-}
-function handleClickCardLinks(event) {
-  if (emailElement.value === '') {
-    event.preventDefault();
-  }
-}
-function handleClickCardLinks(event) {
-  if (linkedinElement.value === '') {
-    event.preventDefault();
-  }
-}
-function handleClickCardLinks(event) {
-  if (githubElement.value === '') {
-    event.preventDefault();
-  }
-}
-phonePreviewElement.addEventListener('click', handleClickCardLinks);
-emailPreviewElement.addEventListener('click', handleClickCardLinks);
-linkedinPreviewElement.addEventListener('click', handleClickCardLinks);
-githubPreviewElement.addEventListener('click', handleClickCardLinks);
+githubElement.addEventListener('change', handleGithub);*/
