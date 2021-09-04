@@ -19,4 +19,4 @@ function handlerFormData(ev){
     console.log(data);
 }
    
-form.addEventListener('change',handlerFormData)
+form.addEventListener('change',handlerFormData);
