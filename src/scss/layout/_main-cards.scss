@@ -125,6 +125,12 @@
   .main__cards--section__sidebar {
     background-color: $dirtyblue;
   }
+  .js-icon {
+    color: $darkgreenblue;
+  }
+  .js-icon-circle {
+    border: solid 2px hospitalgreen;
+  }
 }
 
 .palette2 {
@@ -134,6 +140,12 @@
   .main__cards--section__sidebar {
     background-color: #bd1010;
   }
+  .js-icon {
+    color: #420101;
+  }
+  .js-icon-circle {
+    border: solid 2px #e95626;
+  }
 }
 
 .palette3 {
@@ -142,5 +154,11 @@
   }
   .main__cards--section__sidebar {
     background-color: #eab052;
+  }
+  .js-icon {
+    color: #3e5b65;
+  }
+  .js-icon-circle {
+    border: solid 2px #a2deaf;
   }
 }
