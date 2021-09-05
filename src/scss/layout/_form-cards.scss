@@ -103,27 +103,12 @@
         background-color: #a0c0cf;
       }
     }
+    //SCSS de Añadir Imagen de previsualización//
     .action {
       text-align: center;
       margin: 30px;
     }
     .action__upload-btn {
-      background: deeppink;
-      border-radius: 15px;
-      border: 0;
-      box-shadow: 0 0 5px rgba(#000, .3);
-      box-sizing: border-box;
-      color: #fff;
-      font-family: sans-serif;
-      font-size: 20px;
-      padding: 10px 20px;
-      width: 250px;
-      cursor: pointer;
-    }
-    .action__hiddenField {
-      display:none
-    } 
-    .image__button {
       width: 140px;
       height: 30px;
       font-size: 14px;
@@ -133,13 +118,42 @@
       border: none;
       border-radius: 3px;
     }
+    .action__hiddenField {
+      display: none;
+    }
+    .profile {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
 
+    .profile__image,
     .profile__preview {
-      width: 50px;
-      height: 50px;
-      margin-left: 15px;
+      background-position: center;
+      backrgound-repeat: no-repeat;
+      background-size: cover;
+      border: 1px solid #ccc;
     }
     
+    //.image__button {
+    //width: 140px;
+    //height: 30px;
+    //font-size: 14px;
+    //font-family: $mainfont;
+    //color: #ffffff;
+    //background-color: $dullorange;
+    //border: none;
+    //border-radius: 3px;
+    //}
+
+    .profile__preview {
+      width: 30px;
+      height: 30px;
+      border: solid 1px $hospitalgreen;
+      grid-column: 2 / 3;
+      grid-row: span 2;
+    }
+
     .button__card {
       background-color: $dullorange;
       width: 199px;
