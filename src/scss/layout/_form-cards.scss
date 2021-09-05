@@ -117,13 +117,15 @@
       background-color: $dullorange;
       border: none;
       border-radius: 3px;
+      white-space: nowrap;
     }
     .action__hiddenField {
       display: none;
     }
     .profile {
-      margin: 0 auto;
+      margin: auto;
       display: flex;
+      height: 30px;
       justify-content: center;
     }
 
