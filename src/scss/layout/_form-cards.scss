@@ -103,24 +103,26 @@
         background-color: #a0c0cf;
       }
     }
-    // .image__button {
-    //   display: none;
-    // }
-    // .label_button {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: flex-start;
-    //   width: 140px;
-    //   // height: 30px;
-    //   font-size: 14px;
-    //   font-family: $mainfont;
-    //   text-align: center;
-    //   color: #ffffff;
-    //   background-color: $dullorange;
-    //   border: none;
-    //   border-radius: 3px;
-    //   padding: 10px;
-    // }
+    .action {
+      text-align: center;
+      margin: 30px;
+    }
+    .action__upload-btn {
+      background: deeppink;
+      border-radius: 15px;
+      border: 0;
+      box-shadow: 0 0 5px rgba(#000, .3);
+      box-sizing: border-box;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 20px;
+      padding: 10px 20px;
+      width: 250px;
+      cursor: pointer;
+    }
+    .action__hiddenField {
+      display:none
+    } 
     .image__button {
       width: 140px;
       height: 30px;
@@ -132,13 +134,12 @@
       border-radius: 3px;
     }
 
-    .preload_image {
-      width: 30px;
-      height: 30px;
-      border: solid 1px $hospitalgreen;
-      grid-column: 2 / 3;
-      grid-row: span 2;
+    .profile__preview {
+      width: 50px;
+      height: 50px;
+      margin-left: 15px;
     }
+    
     .button__card {
       background-color: $dullorange;
       width: 199px;

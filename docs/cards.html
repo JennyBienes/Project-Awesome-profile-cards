@@ -1,220 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Design page</title>
-    <script
-      src="https://kit.fontawesome.com/adcd08db79.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
 
-  <body>
-    <header class="header_cards header">
-      <div>
-        <a href="http://beta.adalab.es/project-promo-n-module-2-team-2/">
-          <img
-            class="cards"
-            src="./assets/images/logo-awesome-profile-cards.svg"
-            alt="Logo de awesome profile cards"
-            title="Web del proyecto"
-        /></a>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design page</title>
+  <script src="https://kit.fontawesome.com/adcd08db79.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
 
-    <main class="main_grid">
-      <section class="main__cards">
-        <button class="main__cards--button">
-          <i class="far fa-trash-alt"></i> Reset
-        </button>
-        <section class="main__cards--section">
-          <div class="grid-sidebar">
-            <div class="main__cards--section__sidebar"></div>
-            <h1 class="main__cards--section__title1 js_name_cards">
-              Nombre Apellido
-            </h1>
-            <h2 class="main__cards--section__title2 js_job">Front-end developer</h2>
+<body>
+  <header class="header_cards header">
+    <div>
+      <a href="http://beta.adalab.es/project-promo-n-module-2-team-2/">
+        <img class="cards" src="./assets/images/logo-awesome-profile-cards.svg" alt="Logo de awesome profile cards"
+          title="Web del proyecto" /></a>
+    </div>
+  </header>
+
+  <main class="main_grid">
+    <section class="main__cards">
+      <button class="main__cards--button">
+        <i class="far fa-trash-alt"></i> Reset
+      </button>
+      <section class="main__cards--section">
+        <div class="grid-sidebar">
+          <div class="main__cards--section__sidebar"></div>
+          <h1 class="main__cards--section__title1 js_name_cards">
+            Nombre Apellido
+          </h1>
+          <h2 class="main__cards--section__title2 js_job">Front-end developer</h2>
+        </div>
+
+        <img class="main__cards--section__img" src="./assets/images/jabbascript-social.jpg" alt="profile-image" />
+        <nav>
+          <ul class="main__cards--section__links">
+            <li>
+              <a class="main__cards--section__links--item" href=""><i class="fas fa-mobile-alt"></i></a>
+            </li>
+            <li>
+              <a class="main__cards--section__links--item js_mail" href=""><i class="far fa-envelope"></i></a>
+            </li>
+            <li>
+              <a class="main__cards--section__links--item" href=""><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a class="main__cards--section__links--item" href=""><i class="fab fa-github-alt"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </section>
+
+    <section class="section_form">
+      <form action="#" class="form">
+        <fieldset class="form__section">
+          <div class="section__title">
+            <i class="far fa-object-ungroup"></i>
+            <h2 class="title">Diseña</h2>
+            <i class="fas fa-chevron-down arrow"></i>
           </div>
 
-          <img
-            class="main__cards--section__img"
-            src="./assets/images/jabbascript-social.jpg"
-            alt="profile-image"
-          />
-          <nav>
-            <ul class="main__cards--section__links">
-              <li>
-                <a class="main__cards--section__links--item" href=""
-                  ><i class="fas fa-mobile-alt"></i
-                ></a>
-              </li>
-              <li>
-                <a class="main__cards--section__links--item js_mail" href=""
-                  ><i class="far fa-envelope"></i
-                ></a>
-              </li>
-              <li>
-                <a class="main__cards--section__links--item" href=""
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>
-                <a class="main__cards--section__links--item" href=""
-                  ><i class="fab fa-github-alt"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-      </section>
+          <label for="color_palette"> Colores </label>
+          <ul>
+            <li class="first_palette">
+              <input type="radio" id="color_palette" name="color_palette" class="input_palette" />
+              <div class="colorOne palette"></div>
+              <div class="colorTwo palette"></div>
+              <div class="colorThree palette"></div>
+            </li>
 
-      <section class="section_form">
-        <form action="#" class="form">
-          <fieldset class="form__section">
-            <div class="section__title">
-              <i class="far fa-object-ungroup"></i>
-              <h2 class="title">Diseña</h2>
-              <i class="fas fa-chevron-down arrow"></i>
-            </div>
+            <li class="second_palette">
+              <input type="radio" id="color_palette" name="color_palette" class="input_palette" />
+              <div class="colorOne palette"></div>
+              <div class="colorTwo palette"></div>
+              <div class="colorThree palette"></div>
+            </li>
 
-            <label for="color_palette"> Colores </label>
-            <ul>
-              <li class="first_palette">
-                <input
-                  type="radio"
-                  id="color_palette"
-                  name="color_palette"
-                  class="input_palette"
-                />
-                <div class="colorOne palette"></div>
-                <div class="colorTwo palette"></div>
-                <div class="colorThree palette"></div>
-              </li>
+            <li class="third_palette">
+              <input type="radio" id="color_palette" name="color_palette" class="input_palette" />
+              <div class="colorOne palette"></div>
+              <div class="colorTwo palette"></div>
+              <div class="colorThree palette"></div>
+            </li>
 
-              <li class="second_palette">
-                <input
-                  type="radio"
-                  id="color_palette"
-                  name="color_palette"
-                  class="input_palette"
-                />
-                <div class="colorOne palette"></div>
-                <div class="colorTwo palette"></div>
-                <div class="colorThree palette"></div>
-              </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__section">
+          <div class="section__title">
+            <i class="far fa-keyboard"></i>
+            <h2 class="title">Rellena</h2>
+            <i class="fas fa-chevron-down arrow"></i>
+          </div>
+          <label for="name" class="label">Nombre completo</label>
+          <input type="text" placeholder="Ej. sally jill" name="name" id="name" class="input js_name" />
+          <label for="work" class="label">Puesto</label>
+          <input type="text" placeholder="Ej. Front-end unicorn" name="work" id="work" class="input js_input_job" />
+          
+          <!--Acción para añadir imagen de previsualización -->
+          <div class="action">
+            <label class="action__upload-btn" for="img-selector">Get IMAGE</label>
+            <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+          </div>
+          <div class="profile">
+            <div class="profile__image js__profile-image"
+              style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+            <div class="profile__preview js__profile-preview"></div>
+          </div>
 
-              <li class="third_palette">
-                <input
-                  type="radio"
-                  id="color_palette"
-                  name="color_palette"
-                  class="input_palette"
-                />
-                <div class="colorOne palette"></div>
-                <div class="colorTwo palette"></div>
-                <div class="colorThree palette"></div>
-              </li>
+          <label for="email" class="label">Email</label>
+          <input type="email" placeholder="Ej. sally-hill@gmail.com " name="email" id="email"
+            class="input js_input_mail" />
+          <label for="phone" class="label">Teléfono</label>
+          <input type="tel" placeholder="Ej: 555-55-55-55 " name="phone" id="phone" class="input" />
+          <label for="linkedin" class="label">Linkedin</label>
+          <input type="text" placeholder="Ej. linkedin.com/in/sally.hill" name="linkedin" id="linkedin" class="input" />
+          <label for="github" class="label">Github</label>
+          <input type="text" placeholder="Ej: @sally-hill" name="github" id="github" class="input" />
+        </fieldset>
+        <fieldset class="form__section">
+          <div class="section__title">
+            <i class="fas fa-share-alt"></i>
+            <h2 class="title">Comparte</h2>
+            <i class="fas fa-chevron-down arrow"></i>
+          </div>
 
-            </ul>
-          </fieldset>
-          <fieldset class="form__section">
-            <div class="section__title">
-              <i class="far fa-keyboard"></i>
-              <h2 class="title">Rellena</h2>
-              <i class="fas fa-chevron-down arrow"></i>
-            </div>
+          <button class="button__card">
+            <i class="far fa-address-card"></i> Crear tarjeta
+          </button>
+        </fieldset>
+      </form>
+    </section>
 
-            <label for="name" class="label">Nombre completo</label>
-            <input
-              type="text"
-              placeholder="Ej. sally jill"
-              name="name"
-              id="name"
-              class="input js_name"
-            />
-            <label for="work" class="label">Puesto</label>
-            <input
-              type="text"
-              placeholder="Ej. Front-end unicorn"
-              name="work"
-              id="work"
-              class="input js_input_job"
-            />
-            <label for="image" class="label">Imagen de perfil</label>
-            <button class= "image__button js_button">Añadir imagen</button>
-            <div class="preload_image js_image"></div>
-            <!-- <p>Imagen de perfil</p>
-            <label for="image" class="label label_button">Añadir imagen </label>
-            <input type="file" class="image__button" />
-            <div class="preload_image"></div> -->
-            <label for="email" class="label">Email</label>
-            <input
-              type="email"
-              placeholder="Ej. sally-hill@gmail.com "
-              name="email"
-              id="email"
-              class="input js_input_mail"
-            />
-            <label for="phone" class="label">Teléfono</label>
-            <input
-              type="tel"
-              placeholder="Ej: 555-55-55-55 "
-              name="phone"
-              id="phone"
-              class="input"
-            />
-            <label for="linkedin" class="label">Linkedin</label>
-            <input
-              type="text"
-              placeholder="Ej. linkedin.com/in/sally.hill"
-              name="linkedin"
-              id="linkedin"
-              class="input"
-            />
-            <label for="github" class="label">Github</label>
-            <input
-              type="text"
-              placeholder="Ej: @sally-hill"
-              name="github"
-              id="github"
-              class="input"
-            />
-          </fieldset>
-          <fieldset class="form__section">
-            <div class="section__title">
-              <i class="fas fa-share-alt"></i>
-              <h2 class="title">Comparte</h2>
-              <i class="fas fa-chevron-down arrow"></i>
-            </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">JavaS the hutt &copy; 2021</p>
+    <a href="https://adalab.es/" target="_blank"><img class="footer__image" src="./assets/images/logo-adalab.png"
+        alt="Adalab" title="go to Adalab" />
+    </a>
+  </footer>
 
-            <button class="button__card">
-              <i class="far fa-address-card"></i> Crear tarjeta
-            </button>
-          </fieldset>
-        </form>
-      </section>
+  <script src="./assets/js/main.js"></script>
+</body>
 
-    </main>
-    <footer class="footer">
-      <p class="footer__copyright">JavaS the hutt &copy; 2021</p>
-      <a href="https://adalab.es/" target="_blank"
-        ><img
-          class="footer__image"
-          src="./assets/images/logo-adalab.png"
-          alt="Adalab"
-          title="go to Adalab"
-        />
-      </a>
-    </footer>
-
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>

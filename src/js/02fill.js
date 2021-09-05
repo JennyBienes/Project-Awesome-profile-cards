@@ -22,13 +22,30 @@ function handleJob() {
 
 jobElement.addEventListener("change", handleJob);
 
-//Acción para añadir imagen al clicar botón
-const imageElement = document.querySelector (".js_button");
-const imagePreviewElement = document.querySelector (".js_image");
-function handleClickBtn() {
-  imagePrewiewElement.value = <img src = "./assets/images/jabbascript-social.jpg"></img>
+//acción para añadir imagen y previsualizarla en la tarjeta
+const fr = new FileReader();
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
+
+function getImage(e){
+  const myFile = e.currentTarget.files[0];
+  fr.addEventListener('load', writeImage);
+  fr.readAsDataURL(myFile);
 }
-imageElement.addEventListener ("click", handleClickBtn);
+
+function writeImage() {
+  profileImage.style.backgroundImage = `url(${fr.result})`;
+  profilePreview.style.backgroundImage = `url(${fr.result})`;
+}
+
+function fakeFileClick() {
+  fileField.click(); 
+ }
+ 
+ fileField.addEventListener('change', getImage);
+
+
 
 //Acción para email//
 const emailElement = document.querySelector(".js_input_mail");
