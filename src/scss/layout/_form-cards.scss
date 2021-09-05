@@ -105,8 +105,8 @@
     }
     //SCSS de Añadir Imagen de previsualización//
     .action {
-      text-align: center;
-      margin: 30px;
+      text-align: left;
+      margin: 10px;
     }
     .action__upload-btn {
       width: 140px;
@@ -118,6 +118,10 @@
       border: none;
       border-radius: 3px;
       white-space: nowrap;
+      padding-left: 22.24px;
+      padding-right: 22.23px;
+      padding-top: 6px;
+      padding-bottom: 5px;
     }
     .action__hiddenField {
       display: none;
