@@ -23,13 +23,15 @@
         <input type="text" placeholder="Ej. sally jill" name="name" id="name" class="input js_name" />
         <label for="work" class="label">Puesto</label>
         <input type="text" placeholder="Ej. Front-end unicorn" name="work" id="work" class="input js_input_job" />
-        <label for="image" class="label">Imagen de perfil</label>
-        <button class="image__button">Añadir imagen</button>
-        <div class="preload_image"></div>
-        <!-- <p>Imagen de perfil</p>
-      <label for="image" class="label label_button">Añadir imagen </label>
-      <input type="file" class="image__button" />
-      <div class="preload_image"></div> -->
+       <label for="image" class="label">Imagen de perfil</label>
+       <div class="action">
+       <label class="action__upload-btn" for="img-selector">Añadir Imagen</label>
+       <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+       </div>
+       <div class="profile">
+       <div class="profile__image js__profile-image" style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
+       <div class="profile__preview js__profile-preview"></div>
+       </div>
         <label for="email" class="label">Email</label>
         <input type="email" placeholder="Ej. sally-hill@gmail.com " name="email" id="email"
           class="input js_input_mail" />
