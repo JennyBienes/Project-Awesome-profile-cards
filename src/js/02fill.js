@@ -3,10 +3,8 @@
 const inputTextElements = document.querySelectorAll('.js_inputtext');
 const textPreviewElements = document.querySelectorAll('.js_previewtext');
 function handlePreviewText() {
-
   textPreviewElements[0].innerHTML = inputTextElements[0].value;
   textPreviewElements[1].innerHTML = inputTextElements[1].value;
-
 }
 for (const inputTextElement of inputTextElements) {
   inputTextElement.addEventListener('change', handlePreviewText);
@@ -35,18 +33,23 @@ for (const cardPreviewIcon of cardPreviewIcons) {
 //funcion unica para los links
 
 function handleCardLinks() {
-  cardPreviewIcons[1].setAttribute('href','mailto:' + inputCardsLinks[0].value);
+  cardPreviewIcons[1].setAttribute(
+    'href',
+    'mailto:' + inputCardsLinks[0].value
+  );
 
-  cardPreviewIcons[0].setAttribute('href', 'tel:+34' + inputCardsLinks[1].value);
+  cardPreviewIcons[0].setAttribute(
+    'href',
+    'tel:+34' + inputCardsLinks[1].value
+  );
 
   cardPreviewIcons[2].setAttribute('href', inputCardsLinks[2].value);
 
-  cardPreviewIcons[3].setAttribute('href','https://github.com/' + inputCardsLinks[3].value);
+  cardPreviewIcons[3].setAttribute(
+    'href',
+    'https://github.com/' + inputCardsLinks[3].value
+  );
 }
 for (const inputCardsLink of inputCardsLinks) {
   inputCardsLink.addEventListener('change', handleCardLinks);
 }
-
-
-
-
