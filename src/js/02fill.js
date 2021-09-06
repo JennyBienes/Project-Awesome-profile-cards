@@ -1,4 +1,3 @@
-"use strict";
 
 // JS Imagen previsualización Jenny
 
