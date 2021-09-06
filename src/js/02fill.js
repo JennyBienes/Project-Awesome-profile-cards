@@ -22,6 +22,11 @@ function handleJob() {
 
 jobElement.addEventListener("change", handleJob);
 
+function handleAll() {
+  handleName();
+  handleJob();
+}
+
 //Acción para email//
 const emailElement = document.querySelector(".js_input_mail");
 const emailPreviewElement = document.querySelector(".js_mail");

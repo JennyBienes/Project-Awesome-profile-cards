@@ -8,7 +8,7 @@ for (const headerCollapsable of headerCollapsables) {
 };
 
 function handlerCollapsable(ev) {
-    const clickedHeader = ev.currentTarget;
+  const clickedHeader = ev.currentTarget;
   const clickedContent = clickedHeader.nextElementSibling;
   const arrow = clickedHeader.querySelector('.js_arrow');
 
