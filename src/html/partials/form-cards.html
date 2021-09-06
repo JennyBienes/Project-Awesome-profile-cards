@@ -1,9 +1,9 @@
 <section class="section_form">
   <form action="#" class="form">
-    <fieldset class="form__section">
-      <include src="./colapsable.html" iconStart="far fa-object-ungroup" title="Diseña" iconEnd="fas fa-chevron-down">
+    <fieldset>
+      <include src="./colapsable.html" iconStart="far fa-object-ungroup" title="Diseña" iconEnd="fas fa-chevron-up">
       </include>
-      <div class="div_content js_content">
+      <div class=" js_content hidden">
         <label for="color_palette"> Colores </label>
         <ul>
           <include src="./colors-palette.html" orderList="first_palette">
@@ -15,10 +15,10 @@
         </ul>
       </div>
     </fieldset>
-    <fieldset class="form__section">
-      <include src="./colapsable.html" iconStart="far fa-keyboard" title="Rellena" iconEnd="fas fa-chevron-down">
+    <fieldset>
+      <include src="./colapsable.html" iconStart="far fa-keyboard" title="Rellena" iconEnd="fas fa-chevron-up">
       </include>
-      <div class="div_content js_content">
+      <div class="js_content hidden">
         <label for="name" class="label">Nombre completo</label>
         <input type="text" placeholder="Ej. sally jill" name="name" id="name" class="input js_name" />
         <label for="work" class="label">Puesto</label>
@@ -41,10 +41,10 @@
         <input type="text" placeholder="Ej: @sally-hill" name="github" id="github" class="input" />
       </div>
     </fieldset>
-    <fieldset class="form__section">
-      <include src="./colapsable.html" iconStart="fas fa-share-alt" title="Comparte" iconEnd="fas fa-chevron-down">
+    <fieldset>
+      <include src="./colapsable.html" iconStart="fas fa-share-alt" title="Comparte" iconEnd="fas fa-chevron-up">
       </include>
-      <div class="div_content js_content ">
+      <div class=" js_content hidden">
         <button class="button__card">
           <i class="far fa-address-card"></i> Crear tarjeta
         </button>
