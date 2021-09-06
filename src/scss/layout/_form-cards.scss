@@ -107,23 +107,49 @@
       background-color: #a0c0cf;
     }
   }
-  .image__button {
-    width: 140px;
-    height: 30px;
-    font-size: 14px;
-    font-family: $mainfont;
-    color: #ffffff;
-    background-color: $dullorange;
-    border: none;
-    border-radius: 3px;
-  }
-  .preload_image {
-    width: 30px;
-    height: 30px;
-    border: solid 1px $hospitalgreen;
-    grid-column: 2 / 3;
-    grid-row: span 2;
-  }
+ .action {
+      text-align: left;
+      margin: 10px;
+    }
+    .action__upload-btn {
+      width: 140px;
+      height: 30px;
+      font-size: 14px;
+      font-family: $mainfont;
+      color: #ffffff;
+      background-color: $dullorange;
+      border: none;
+      border-radius: 3px;
+      white-space: nowrap;
+      padding-left: 22.24px;
+      padding-right: 22.23px;
+      padding-top: 6px;
+      padding-bottom: 5px;
+    }
+    .action__hiddenField {
+      display: none;
+    }
+    .profile {
+      margin: auto;
+      display: flex;
+      height: 30px;
+      justify-content: center;
+    }
+    .profile__image,
+    .profile__preview {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 1px solid #ccc;
+    }
+    .profile__preview {
+      width: 30px;
+      height: 30px;
+      border: solid 1px $hospitalgreen;
+      grid-column: 2 / 3;
+      grid-row: span 2;
+    }
+ 
   .button__card {
     background-color: $dullorange;
     width: 199px;
