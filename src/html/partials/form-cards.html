@@ -1,5 +1,5 @@
 <section class="section_form">
-  <form action="#" class="form">
+  <form action="#" class="form js_form">
     <fieldset>
       <include src="./colapsable.html" iconStart="far fa-object-ungroup" title="Diseña" iconEnd="fas fa-chevron-up">
       </include>
@@ -20,9 +20,9 @@
       </include>
       <div class="js_content hidden">
         <label for="name" class="label">Nombre completo</label>
-        <input type="text" placeholder="Ej. sally jill" name="name" id="name" class="input js_name" />
+        <input type="text" placeholder="Ej. sally jill" name="name" id="name" class="input js_inputtext" />
         <label for="work" class="label">Puesto</label>
-        <input type="text" placeholder="Ej. Front-end unicorn" name="work" id="work" class="input js_input_job" />
+        <input type="text" placeholder="Ej. Front-end unicorn" name="work" id="work" class="input js_inputtext" />
        <label for="image" class="label">Imagen de perfil</label>
        <div class="action">
        <label class="action__upload-btn" for="img-selector">Añadir Imagen</label>
@@ -33,13 +33,13 @@
        </div>
         <label for="email" class="label">Email</label>
         <input type="email" placeholder="Ej. sally-hill@gmail.com " name="email" id="email"
-          class="input js_input_mail" />
+          class="input js_input_link" />
         <label for="phone" class="label">Teléfono</label>
-        <input type="tel" placeholder="Ej: 555-55-55-55 " name="phone" id="phone" class="input" />
+        <input type="tel" placeholder="Ej: 555-55-55-55 " pattern="[6-7]{1}[0-9]{8}" name="phone" id="phone" class="input js_input_link" />
         <label for="linkedin" class="label">Linkedin</label>
-        <input type="text" placeholder="Ej. linkedin.com/in/sally.hill" name="linkedin" id="linkedin" class="input" />
+        <input type="text" placeholder="Ej. linkedin.com/in/sally.hill" name="linkedin" id="linkedin" class="input js_input_link" />
         <label for="github" class="label">Github</label>
-        <input type="text" placeholder="Ej: @sally-hill" name="github" id="github" class="input" />
+        <input type="text" placeholder="Ej: @sally-hill" name="github" id="github" class="input js_input_link" />
       </div>
     </fieldset>
     <fieldset>
@@ -52,4 +52,9 @@
       </div>
     </fieldset>
   </form>
+  <section class="share__section">
+    <h2 class="share__section--title">La tarjeta ha sido creada:</h2>
+    <p class="share__section--link">https://awesome-profile-card.com?id=A456DF0001</p>
+    <button class="share__section--button"><i class="fab fa-twitter"></i> Compartir en twitter</button>
+  </section>
 </section>
