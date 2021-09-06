@@ -93,6 +93,10 @@
     background-color: $dirtyblue;
     width: 240px;
     height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
   }
   .main__cards--section__links {
     list-style-type: none;
