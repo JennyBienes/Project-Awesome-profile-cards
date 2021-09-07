@@ -93,6 +93,11 @@
     background-color: $dirtyblue;
     width: 240px;
     height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+    background-image: url("../images/jabbascript-social.jpg");
   }
   .main__cards--section__links {
     list-style-type: none;
@@ -114,5 +119,50 @@
     text-align: center;
     line-height: 1.75;
     margin: 5px;
+  }
+}
+
+.palette1 {
+  .main__cards--section__title1 {
+    color: $darkgreenblue;
+  }
+  .main__cards--section__sidebar {
+    background-color: $dirtyblue;
+  }
+  .js-icon {
+    color: $darkgreenblue;
+  }
+  .js-icon-circle {
+    border: solid 2px $hospitalgreen;
+  }
+}
+
+.palette2 {
+  .main__cards--section__title1 {
+    color: #420101;
+  }
+  .main__cards--section__sidebar {
+    background-color: #bd1010;
+  }
+  .js-icon {
+    color: #420101;
+  }
+  .js-icon-circle {
+    border: solid 2px #e95626;
+  }
+}
+
+.palette3 {
+  .main__cards--section__title1 {
+    color: #3e5b65;
+  }
+  .main__cards--section__sidebar {
+    background-color: #eab052;
+  }
+   .js-icon {
+    color: #3e5b65;
+  }
+  .js-icon-circle {
+    border: solid 2px #a2deaf;
   }
 }

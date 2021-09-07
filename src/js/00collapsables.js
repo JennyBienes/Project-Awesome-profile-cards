@@ -20,8 +20,8 @@ function handlerCollapsable(ev) {
               arrow.classList.toggle('fa-chevron-up');
           } else {
               collapsable.classList.add('hidden');
-            collapsable.classList.remove('div_content');
-         
+              collapsable.classList.remove('div_content');
+              
             
       }
   }
