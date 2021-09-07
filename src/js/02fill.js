@@ -68,10 +68,10 @@ function handleCardLinks() {
     'tel:+34' + inputCardsLinks[1].value
   );
 
-  cardPreviewIcons[2].setAttribute('href', inputCardsLinks[2].value);
+  cardPreviewIcons[2].setAttribute('href', 'https://www.linkedin.com/in/' + inputCardsLinks[2].value);
 
   
-  https://www.linkedin.com/in/irene-bioque-muñoz-140348a2/
+
   cardPreviewIcons[3].setAttribute(
     'href',
     'https://github.com/' + inputCardsLinks[3].value
