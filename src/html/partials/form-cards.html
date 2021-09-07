@@ -6,11 +6,11 @@
       <div class=" js_content hidden">
         <label for="color_palette"> Colores </label>
         <ul>
-          <include src="./colors-palette.html" orderList="first_palette" value="1" checkedRadio= "checked">
+          <include src="./colors-palette.html" orderList="first_palette" value="1" checkedRadio= "checked" id="palette" checked= "checked">
           </include>
-          <include src="./colors-palette.html" orderList="second_palette" value="2">
+          <include src="./colors-palette.html" orderList="second_palette" value="2" id="palette" checked= "">
           </include>
-          <include src="./colors-palette.html" orderList="third_palette" value="3">
+          <include src="./colors-palette.html" orderList="third_palette" value="3" id="palette" checked= "">
           </include>
         </ul>
       </div>
@@ -22,11 +22,11 @@
         <label for="name" class="label">Nombre completo</label>
         <input type="text" placeholder="Ej. sally jill" name="name" id="name" class="input js_inputtext" />
         <label for="work" class="label">Puesto</label>
-        <input type="text" placeholder="Ej. Front-end unicorn" name="work" id="work" class="input js_inputtext" />
+        <input type="text" placeholder="Ej. Front-end unicorn" name="work" id="job" class="input js_inputtext" />
        <label for="image" class="label">Imagen de perfil</label>
        <div class="action">
-       <label class="action__upload-btn" for="img-selector">Añadir Imagen</label>
-       <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+       <label class="action__upload-btn" for="photo">Añadir Imagen</label>
+       <input type="file" name="" id="photo" class="action__hiddenField js__profile-upload-btn">
        </div>
        <div class="profile">
        <div class="profile__preview js__profile-preview"></div>
@@ -46,15 +46,15 @@
       <include src="./colapsable.html" iconStart="fas fa-share-alt" title="Comparte" iconEnd="fas fa-chevron-up">
       </include>
       <div class=" js_content hidden">
-        <button class="button__card">
+        <button class="button__card js_button_share">
           <i class="far fa-address-card"></i> Crear tarjeta
         </button>
       </div>
     </fieldset>
   </form>
-  <section class="share__section">
+  <section class="share__section hidden js_share_twitter">
     <h2 class="share__section--title">La tarjeta ha sido creada:</h2>
-    <p class="share__section--link">https://awesome-profile-card.com?id=A456DF0001</p>
+    <p class="share__section--link js_parrafo_share">https://awesome-profile-card.com?id=A456DF0001</p>
     <button class="share__section--button"><i class="fab fa-twitter"></i> Compartir en twitter</button>
   </section>
 </section>
