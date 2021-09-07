@@ -8,7 +8,7 @@ for (const headerCollapsable of headerCollapsables) {
 };
 
 function handlerCollapsable(ev) {
-    const clickedHeader = ev.currentTarget;
+  const clickedHeader = ev.currentTarget;
   const clickedContent = clickedHeader.nextElementSibling;
   const arrow = clickedHeader.querySelector('.js_arrow');
 
@@ -20,8 +20,8 @@ function handlerCollapsable(ev) {
               arrow.classList.toggle('fa-chevron-up');
           } else {
               collapsable.classList.add('hidden');
-            collapsable.classList.remove('div_content');
-         
+              collapsable.classList.remove('div_content');
+              
             
       }
   }

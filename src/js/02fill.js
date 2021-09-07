@@ -70,6 +70,8 @@ function handleCardLinks() {
 
   cardPreviewIcons[2].setAttribute('href', inputCardsLinks[2].value);
 
+  
+  https://www.linkedin.com/in/irene-bioque-muñoz-140348a2/
   cardPreviewIcons[3].setAttribute(
     'href',
     'https://github.com/' + inputCardsLinks[3].value
