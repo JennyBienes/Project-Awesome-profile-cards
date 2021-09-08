@@ -1,6 +1,6 @@
-const buttonShare = document.querySelector('.js_button_share');
-const parrafoShare = document.querySelector('.js_parrafo_share');
-const sectionShare = document.querySelector('.js_share_twitter');
+const buttonShare = document.querySelector(".js_button_share");
+const parrafoShare = document.querySelector(".js_parrafo_share");
+const sectionShare = document.querySelector(".js_share_twitter");
 const dataUser = {
   palette: '',
   name: '',
@@ -18,18 +18,17 @@ function handlerFormData(ev) {
   const inputValue = ev.target.value;
   console.log(inputId, inputValue);
   dataUser[inputId] = inputValue;
-
   console.log(dataUser);
 }
-form.addEventListener('change', handlerFormData);
+form.addEventListener("change", handlerFormData);
 
 function handleCreateBtn(ev) {
   ev.preventDefault();
-  fetch('http://awesome-profile-cards.herokuapp.com/card/', {
-    method: 'POST',
+  fetch("https://awesome-profile-cards.herokuapp.com/card", {
+    method: "POST",
     body: JSON.stringify(dataUser),
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   })
     .then((response) => response.json())
