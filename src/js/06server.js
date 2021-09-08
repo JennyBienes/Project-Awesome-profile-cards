@@ -1,6 +1,7 @@
 const buttonShare = document.querySelector(".js_button_share");
 const parrafoShare = document.querySelector(".js_parrafo_share");
 const sectionShare = document.querySelector(".js_share_twitter");
+const shareTitle = document.querySelector('.js_sharetitle');
 const dataUser = {
   palette: '',
   name: '',
@@ -35,10 +36,15 @@ function handleCreateBtn(ev) {
     .then((data) => {
       sectionShare.classList.remove('hidden');
       if (data.success === true) {
+        shareTitle.innerHTML = 'La tarjeta ha sido creada:'
         parrafoShare.innerHTML = data.cardURL;
+        parrafoShare.setAttribute('href', data.cardURL);
       } else {
+        shareTitle.innerHTML = 'Erorr al crear tarjeta:'
         parrafoShare.innerHTML =
-          'Error al crear la tarjeta, por favor revise los datos introducidos';
+          'Por favor, revise los datos introducidos';
+        parrafoShare.removeAttribute('href');
+          
       }
     });
 }
