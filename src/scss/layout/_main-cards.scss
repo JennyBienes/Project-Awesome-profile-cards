@@ -51,7 +51,7 @@
   grid-column: 2/3;
 }
 .main__cards--section {
-  width: 240px;
+  //width: 240px;
   height: 329px;
   margin: 20px auto 40px auto;
   background-color: $whitetwo;
@@ -72,7 +72,7 @@
   }
   .main__cards--section__title1 {
     font-family: $montserratbold;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
     color: $darkgreenblue;
     text-transform: capitalize;
