@@ -8,8 +8,10 @@ function getObjectFromLocalStorage() {
     if (localStorageDataUser !== null) {
       const objectArray = JSON.parse(localStorageDataUser);
       dataUser = objectArray;
-      // handleCardLinks();
-      // handlePreviewText();
+       handlePreviewText();
+       // duda de si tiene que pintar la imagen aqui
+       writeImage();
+       paintCard();
     }
 }
 getObjectFromLocalStorage();

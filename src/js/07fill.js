@@ -88,3 +88,21 @@ for (const inputCardsLink of inputCardsLinks) {
   inputCardsLink.addEventListener('change', handleCardLinks);
 }
 
+
+// funcion para pintar localStorage en la tarjeta de preview
+function paintCard(){
+  const nameCard = document.querySelector('.js_title');
+  nameCard.innerHTML = dataUser.name;
+  const jobCard = document.querySelector('.js_job');
+  jobCard.innerHTML = dataUser.job;
+  // esta no funciona
+  profileImage.src = dataUser.photo;
+  // const phone = document.getElementById('mobile_link');
+  // no es innerHTML
+  // phone.value = dataUser.phone;
+  // const email = document.getElementById('mail_link');
+  // email.value = dataUser.email;
+  /* for (const input of inputCardsLinks){
+
+  }*/
+}
