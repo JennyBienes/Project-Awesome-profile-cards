@@ -103,7 +103,6 @@ function paintCard(){
   profileImage.style.backgroundImage = `url(${dataUser.photo})`;
   profilePreview.style.backgroundImage = `url(${dataUser.photo})`;
   fileField.setAttribute('value', dataUser.photo);
- 
   handleCardLinks();
   handlePreviewText();
 }
