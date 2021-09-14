@@ -2,6 +2,7 @@ const buttonShare = document.querySelector(".js_button_share");
 const parrafoShare = document.querySelector(".js_parrafo_share");
 const sectionShare = document.querySelector(".js_share_twitter");
 const shareTitle = document.querySelector(".js_sharetitle");
+const linkTwitter = document.querySelector(".js_linktwitter");
 let dataUser = {
   palette: "",
   name: "",
@@ -38,6 +39,8 @@ function handleCreateBtn(ev) {
         shareTitle.innerHTML = "La tarjeta ha sido creada:";
         parrafoShare.innerHTML = data.cardURL;
         parrafoShare.setAttribute("href", data.cardURL);
+        linkTwitter.href = `https://twitter.com/intent/tweet?url=${data.cardURL};`
+
       } else {
         shareTitle.innerHTML = "Error al crear tarjeta:";
         parrafoShare.innerHTML = "Por favor, revise los datos introducidos";
