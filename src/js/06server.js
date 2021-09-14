@@ -2,7 +2,7 @@ const buttonShare = document.querySelector(".js_button_share");
 const parrafoShare = document.querySelector(".js_parrafo_share");
 const sectionShare = document.querySelector(".js_share_twitter");
 const shareTitle = document.querySelector('.js_sharetitle');
-const dataUser = {
+let dataUser = {
   palette: '',
   name: '',
   job: '',
@@ -12,6 +12,7 @@ const dataUser = {
   github: '',
   photo: '',
 };
+
 
 const form = document.querySelector('.js_form');
 function handlerFormData(ev) {
@@ -50,3 +51,5 @@ function handleCreateBtn(ev) {
 }
 
 buttonShare.addEventListener('click', handleCreateBtn);
+
+

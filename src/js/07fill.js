@@ -35,6 +35,7 @@ const textPreviewElements = document.querySelectorAll('.js_previewtext');
 function handlePreviewText() {
   textPreviewElements[0].innerHTML = inputTextElements[0].value;
   textPreviewElements[1].innerHTML = inputTextElements[1].value;
+  setObjectInLocalStorage();
 }
 for (const inputTextElement of inputTextElements) {
   inputTextElement.addEventListener('change', handlePreviewText);
@@ -60,8 +61,8 @@ for (const cardPreviewIcon of cardPreviewIcons) {
   cardPreviewIcon.addEventListener('click', handleClickCardLinks);
 }
 
-//funcion unica para los links
 
+//funcion unica para los links
 function handleCardLinks() {
   cardPreviewIcons[1].setAttribute(
     'href',
@@ -81,7 +82,9 @@ function handleCardLinks() {
     'href',
     'https://github.com/' + inputCardsLinks[3].value
   );
+setObjectInLocalStorage();
 }
 for (const inputCardsLink of inputCardsLinks) {
   inputCardsLink.addEventListener('change', handleCardLinks);
 }
+
