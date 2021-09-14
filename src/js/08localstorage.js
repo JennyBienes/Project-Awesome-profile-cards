@@ -1,6 +1,6 @@
 function setObjectInLocalStorage() {
-    const transformObjectArray = JSON.stringify(dataUser);
-    localStorage.setItem('dataUser', transformObjectArray);
+  const transformObjectArray = JSON.stringify(dataUser);
+  localStorage.setItem("dataUser", transformObjectArray);
 }
 
 function getObjectFromLocalStorage() {
