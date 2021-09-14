@@ -1,51 +1,148 @@
 <section class="section_form">
   <form action="#" class="form js_form">
     <fieldset>
-      <include src="./colapsable.html" iconStart="far fa-object-ungroup" title="Diseña" iconEnd="fas fa-chevron-up">
+      <include
+        src="./colapsable.html"
+        iconStart="far fa-object-ungroup"
+        title="Diseña"
+        iconEnd="fas fa-chevron-up"
+      >
       </include>
-      <div class=" js_content hidden">
+      <div class="js_content hidden">
         <label for="color_palette"> Colores </label>
         <ul>
-          <include src="./colors-palette.html" orderList="first_palette" value="1" id="palette1" checkedInput = "true">
+          <include
+            src="./colors-palette.html"
+            orderList="first_palette"
+            value="1"
+            id="palette1"
+            checkedInput="true"
+          >
           </include>
-          <include src="./colors-palette.html" orderList="second_palette" value="2" id="palette2" checkedInput = "false" >
+          <include
+            src="./colors-palette.html"
+            orderList="second_palette"
+            value="2"
+            id="palette2"
+            checkedInput="false"
+          >
           </include>
-          <include src="./colors-palette.html" orderList="third_palette" value="3" id="palette3" checkedInput = "false">
+          <include
+            src="./colors-palette.html"
+            orderList="third_palette"
+            value="3"
+            id="palette3"
+            checkedInput="false"
+          >
           </include>
         </ul>
       </div>
     </fieldset>
     <fieldset>
-      <include src="./colapsable.html" iconStart="far fa-keyboard" title="Rellena" iconEnd="fas fa-chevron-up">
+      <include
+        src="./colapsable.html"
+        iconStart="far fa-keyboard"
+        title="Rellena"
+        iconEnd="fas fa-chevron-up"
+      >
       </include>
       <div class="js_content hidden">
-        <label for="name" class="label">Nombre completo<span class="span">*</span></label>
-        <input type="text" placeholder="Ej. sally jill" name="name" id="name" class="input js_inputtext" value="" required/>
-        <label for="work" class="label">Puesto<span class="span">*</span></label>
-        <input type="text" placeholder="Ej. Front-end unicorn" name="work" id="job" class="input js_inputtext" required />
-       <label for="image" class="label">Imagen de perfil<span class="span">*</span></label>
-       <div class="action">
-       <label class="action__upload-btn" for="photo">Añadir Imagen</label>
-       <input type="file" name="photo" id="photo" class="action__hiddenField js__profile-upload-btn" required>
-       </div>
-       <div class="profile">
-       <div class="profile__preview js__profile-preview"></div>
-       </div>
-        <label for="email" class="label">Email<span class="span">*</span></label>
-        <input type="email" placeholder="Ej. sally-hill@gmail.com " name="email" id="email"
-          class="input js_input_link" required/>
-        <label for="phone" class="label">Teléfono<span class="span">*</span></label>
-        <input type="tel" placeholder="Ej: 555-55-55-55 " pattern="[6-7]{1}[0-9]{8}" name="phone" id="phone" class="input js_input_link" required/>
-        <label for="linkedin" class="label">Linkedin<span class="span">*</span></label>
-        <input type="text" placeholder="Ej. linkedin.com/in/sally.hill" name="linkedin" id="linkedin" class="input js_input_link" required/>
-        <label for="github" class="label">Github<span class="span">*</span></label>
-        <input type="text" placeholder="Ej: @sally-hill" name="github" id="github" class="input js_input_link" value="" required/>
+        <label for="name" class="label"
+          >Nombre completo<span class="span">*</span></label
+        >
+        <input
+          type="text"
+          placeholder="Ej. sally jill"
+          name="name"
+          id="name"
+          class="input js_inputtext"
+          value=""
+          required
+        />
+        <label for="work" class="label"
+          >Puesto<span class="span">*</span></label
+        >
+        <input
+          type="text"
+          placeholder="Ej. Front-end unicorn"
+          name="work"
+          id="job"
+          class="input js_inputtext"
+          required
+        />
+        <label for="image" class="label"
+          >Imagen de perfil<span class="span">*</span></label
+        >
+        <div class="action">
+          <label class="action__upload-btn" for="photo">Añadir Imagen</label>
+          <input
+            type="file"
+            name="photo"
+            id="photo"
+            class="action__hiddenField js__profile-upload-btn"
+            required
+          />
+        </div>
+        <div class="profile">
+          <div class="profile__preview js__profile-preview"></div>
+        </div>
+        <label for="email" class="label"
+          >Email<span class="span">*</span></label
+        >
+        <input
+          type="email"
+          placeholder="Ej. sally-hill@gmail.com "
+          name="email"
+          id="email"
+          class="input js_input_link"
+          required
+        />
+        <label for="phone" class="label"
+          >Teléfono<span class="span">*</span></label
+        >
+        <input
+          type="tel"
+          placeholder="Ej: 555-55-55-55 "
+          pattern="[6-7]{1}[0-9]{8}"
+          name="phone"
+          id="phone"
+          class="input js_input_link"
+          required
+        />
+        <label for="linkedin" class="label"
+          >Linkedin<span class="span">*</span></label
+        >
+        <input
+          type="text"
+          placeholder="Ej. linkedin.com/in/sally.hill"
+          name="linkedin"
+          id="linkedin"
+          class="input js_input_link"
+          required
+        />
+        <label for="github" class="label"
+          >Github<span class="span">*</span></label
+        >
+        <input
+          type="text"
+          placeholder="Ej: @sally-hill"
+          name="github"
+          id="github"
+          class="input js_input_link"
+          value=""
+          required
+        />
       </div>
     </fieldset>
     <fieldset>
-      <include src="./colapsable.html" iconStart="fas fa-share-alt" title="Comparte" iconEnd="fas fa-chevron-up">
+      <include
+        src="./colapsable.html"
+        iconStart="fas fa-share-alt"
+        title="Comparte"
+        iconEnd="fas fa-chevron-up"
+      >
       </include>
-      <div class=" js_content hidden">
+      <div class="js_content hidden">
         <button class="button__card js_button_share">
           <i class="far fa-address-card"></i> Crear tarjeta
         </button>
@@ -55,6 +152,10 @@
   <section class="share__section hidden js_share_twitter">
     <h2 class="share__section--title js_sharetitle"></h2>
     <a class="share__section--link js_parrafo_share" target="blank"></a>
-    <button class="share__section--button"><i class="fab fa-twitter"></i> Compartir en twitter</button>
+    <button class="share__section--button">
+      <a class="js_linktwitter linktwitter" href=""
+        ><i class="fab fa-twitter"></i> Compartir en twitter</a
+      >
+    </button>
   </section>
 </section>
