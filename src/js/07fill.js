@@ -1,6 +1,4 @@
-
 // JS Imagen previsualización Jenny
-
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
@@ -61,7 +59,6 @@ for (const cardPreviewIcon of cardPreviewIcons) {
   cardPreviewIcon.addEventListener('click', handleClickCardLinks);
 }
 
-
 //funcion unica para los links
 function handleCardLinks() {
   cardPreviewIcons[1].setAttribute(
@@ -88,3 +85,49 @@ for (const inputCardsLink of inputCardsLinks) {
   inputCardsLink.addEventListener('change', handleCardLinks);
 }
 
+// funcion para pintar localStorage en la tarjeta de preview
+function paintCard(){
+  //debugger;
+  const nameCard = document.querySelector('#name');
+  nameCard.value = dataUser.name;
+  const jobCard = document.querySelector('#job');
+  jobCard.value = dataUser.job;
+  const emailCard = document.querySelector('#email');
+  emailCard.value = dataUser.email;
+  const phoneCard = document.querySelector('#phone');
+  phoneCard.value = dataUser.phone;
+  const linkedinCard = document.querySelector('#linkedin');
+  linkedinCard.value = dataUser.linkedin;
+  const githubCard = document.querySelector('#github');
+  githubCard.value = dataUser.github;
+  profileImage.style.backgroundImage = `url(${dataUser.photo})`;
+  profilePreview.style.backgroundImage = `url(${dataUser.photo})`;
+  fileField.setAttribute('value', dataUser.photo);
+ 
+  handleCardLinks();
+  handlePreviewText();
+}
+
+/*function paintCard(){
+  const nameCard = document.querySelector('.js_title');
+  nameCard.innerHTML = dataUser.name;
+  const jobCard = document.querySelector('.js_job');
+  jobCard.innerHTML = dataUser.job;
+  cardPreviewIcons[1].setAttribute(
+    'href',
+    'mailto:' + dataUser.email
+  );
+  cardPreviewIcons[0].setAttribute(
+    'href',
+    'tel:+34' + dataUser.phone
+  );
+  cardPreviewIcons[2].setAttribute('href', 'https://www.linkedin.com/in/' + dataUser.linkedin);
+  
+  cardPreviewIcons[3].setAttribute(
+    'href',
+    'https://github.com/' + dataUser.github
+  );
+  profileImage.style.backgroundImage = `url(${dataUser.photo})`;
+  profilePreview.style.backgroundImage = `url(${dataUser.photo})`;
+  fileField.setAttribute('value', dataUser.photo);
+}*/

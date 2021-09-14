@@ -12,8 +12,6 @@ let dataUser = {
   github: '',
   photo: '',
 };
-
-
 const form = document.querySelector('.js_form');
 function handlerFormData(ev) {
   const inputId = ev.target.id;
