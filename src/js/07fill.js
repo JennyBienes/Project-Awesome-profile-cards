@@ -1,6 +1,7 @@
 
-// JS Imagen previsualización Jenny
 
+
+// JS Imagen previsualización Jenny
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
@@ -61,7 +62,6 @@ for (const cardPreviewIcon of cardPreviewIcons) {
   cardPreviewIcon.addEventListener('click', handleClickCardLinks);
 }
 
-
 //funcion unica para los links
 function handleCardLinks() {
   cardPreviewIcons[1].setAttribute(
@@ -88,21 +88,28 @@ for (const inputCardsLink of inputCardsLinks) {
   inputCardsLink.addEventListener('change', handleCardLinks);
 }
 
-
 // funcion para pintar localStorage en la tarjeta de preview
 function paintCard(){
   const nameCard = document.querySelector('.js_title');
   nameCard.innerHTML = dataUser.name;
   const jobCard = document.querySelector('.js_job');
   jobCard.innerHTML = dataUser.job;
-  // esta no funciona
-  profileImage.src = dataUser.photo;
-  // const phone = document.getElementById('mobile_link');
-  // no es innerHTML
-  // phone.value = dataUser.phone;
-  // const email = document.getElementById('mail_link');
-  // email.value = dataUser.email;
-  /* for (const input of inputCardsLinks){
-
-  }*/
+  cardPreviewIcons[1].setAttribute(
+    'href',
+    'mailto:' + dataUser.email
+  );
+  cardPreviewIcons[0].setAttribute(
+    'href',
+    'tel:+34' + dataUser.phone
+  );
+  cardPreviewIcons[2].setAttribute('href', 'https://www.linkedin.com/in/' + dataUser.linkedin);
+  
+  cardPreviewIcons[3].setAttribute(
+    'href',
+    'https://github.com/' + dataUser.github
+  );
+  profileImage.style.backgroundImage = `url(${dataUser.photo})`;
+  profilePreview.style.backgroundImage = `url(${dataUser.photo})`;
+  fileField.setAttribute('value', dataUser.photo);
 }
+console.log(dataUser);

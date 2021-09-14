@@ -10,7 +10,6 @@ function getObjectFromLocalStorage() {
       dataUser = objectArray;
        handlePreviewText();
        // duda de si tiene que pintar la imagen aqui
-       writeImage();
        paintCard();
     }
 }
