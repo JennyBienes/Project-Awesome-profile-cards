@@ -14,6 +14,8 @@ function handleDesignCard(ev) {
   previewSection.classList.remove("palette1");
   previewSection.classList.remove("palette2");
   previewSection.classList.remove("palette3");
+  previewSection.classList.remove("palette4");
+  previewSection.classList.remove("palette5");
   previewSection.classList.add("palette" + selectedPalette);
 }
 

@@ -109,6 +109,34 @@
       background-color: #a0c0cf;
     }
   }
+  .fourth_palette {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    .colorOne {
+      background-color: #6d2c7d;
+    }
+    .colorTwo {
+      background-color: #ff40a0;
+    }
+    .colorThree {
+      background-color: #6b54ff;
+    }
+  }
+  .fifth_palette {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    .colorOne {
+      background-color: #00a832;
+    }
+    .colorTwo {
+      background-color: #14ff30;
+    }
+    .colorThree {
+      background-color: #8affad;
+    }
+  }
   .action {
     text-align: left;
     margin: 10px;
