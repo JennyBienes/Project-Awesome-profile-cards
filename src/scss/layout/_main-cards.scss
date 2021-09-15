@@ -42,7 +42,7 @@
   height: 30px;
   border-radius: 22px;
   font-size: 12px;
-  font-family: $opensansreg;
+  font-family: $mainfont;
   text-transform: uppercase;
   color: $gunmetal;
   background-color: $bluesilver;
@@ -71,7 +71,7 @@
     grid-row: 2/4;
   }
   .main__cards--section__title1 {
-    font-family: $montserratbold;
+    font-family: $montserrat;
     font-size: 16px;
     font-weight: 900;
     color: $darkgreenblue;
@@ -81,7 +81,7 @@
     grid-row: 1/2;
   }
   .main__cards--section__title2 {
-    font-family: $montserratreg;
+    font-family: $montserrat;
     font-size: 16px;
     font-weight: 500;
     color: $gunmetal;
@@ -159,7 +159,7 @@
   .main__cards--section__sidebar {
     background-color: #eab052;
   }
-   .js-icon {
+  .js-icon {
     color: #3e5b65;
   }
   .js-icon-circle {

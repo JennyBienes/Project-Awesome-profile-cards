@@ -3,6 +3,8 @@ const parrafoShare = document.querySelector(".js_parrafo_share");
 const sectionShare = document.querySelector(".js_share_twitter");
 const shareTitle = document.querySelector(".js_sharetitle");
 const linkTwitter = document.querySelector(".js_linktwitter");
+const linkFacebook = document.querySelector(".js_linkFacebook");
+const linkLinkedin = document.querySelector(".js_linkLinkedin");
 let dataUser = {
   palette: "",
   name: "",
@@ -40,6 +42,8 @@ function handleCreateBtn(ev) {
         parrafoShare.innerHTML = data.cardURL;
         parrafoShare.setAttribute("href", data.cardURL);
         linkTwitter.href = `https://twitter.com/intent/tweet?url=${data.cardURL};`
+        linkFacebook.href = `https://www.facebook.com/sharer/sharer.php?u=${data.cardURL}`
+        linkLinkedin.href = `https://www.linkedin.com/shareArticle?url=${data.cardURL}`
 
       } else {
         shareTitle.innerHTML = "Error al crear tarjeta:";
