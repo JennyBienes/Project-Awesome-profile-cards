@@ -1,3 +1,4 @@
+
 // JS Imagen previsualización Jenny
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
@@ -11,20 +12,16 @@ function getImage(e){
   return imageForFetch;
 
 }
-
 function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   fileField.setAttribute('value', fr.result);
-  dataUser.photo= fr.result;
-  console.log(photo);
+  dataUser.photo = fr.result;
 }
-
 function fakeFileClick() {
-  fileField.click(); 
- }
- 
- fileField.addEventListener('change', getImage);
+  fileField.click();
+}
+fileField.addEventListener('change', getImage);
 
 //Acción para el nombre y el trabajo
 //variables
@@ -44,7 +41,6 @@ for (const inputTextElement of inputTextElements) {
 //variables
 
 const inputCardsLinks = document.querySelectorAll('.js_input_link');
-console.log(inputCardsLinks);
 const cardPreviewIcons = document.querySelectorAll('.js-icon-circle');
 
 //preventDefault de los enlaces de la tarjeta
@@ -73,13 +69,13 @@ function handleCardLinks() {
 
   cardPreviewIcons[2].setAttribute('href', 'https://www.linkedin.com/in/' + inputCardsLinks[2].value);
 
-  
+
 
   cardPreviewIcons[3].setAttribute(
     'href',
     'https://github.com/' + inputCardsLinks[3].value
   );
-setObjectInLocalStorage();
+  setObjectInLocalStorage();
 }
 for (const inputCardsLink of inputCardsLinks) {
   inputCardsLink.addEventListener('change', handleCardLinks);
@@ -87,25 +83,27 @@ for (const inputCardsLink of inputCardsLinks) {
 
 // funcion para pintar localStorage en la tarjeta de preview
 function paintCard(){
-    const nameCard = document.querySelector('#name');
-    nameCard.value = dataUser.name;
-    const jobCard = document.querySelector('#job');
-    jobCard.value = dataUser.job;
-    const emailCard = document.querySelector('#email');
-    emailCard.value = dataUser.email;
-    const phoneCard = document.querySelector('#phone');
-    phoneCard.value = dataUser.phone;
-    const linkedinCard = document.querySelector('#linkedin');
-    linkedinCard.value = dataUser.linkedin;
-    const githubCard = document.querySelector('#github');
-    githubCard.value = dataUser.github;
-    profileImage.style.backgroundImage = `url(${dataUser.photo})`;
-    profilePreview.style.backgroundImage = `url(${dataUser.photo})`;
-    fileField.setAttribute('value', dataUser.photo);
-    previewSection.classList.remove("palette1");
-    previewSection.classList.remove("palette2");
-    previewSection.classList.remove("palette3");
-    previewSection.classList.add(`palette${dataUser.palette}`);
+  const nameCard = document.querySelector('#name');
+  nameCard.value = dataUser.name;
+  const jobCard = document.querySelector('#job');
+  jobCard.value = dataUser.job;
+  const emailCard = document.querySelector('#email');
+  emailCard.value = dataUser.email;
+  const phoneCard = document.querySelector('#phone');
+  phoneCard.value = dataUser.phone;
+  const linkedinCard = document.querySelector('#linkedin');
+  linkedinCard.value = dataUser.linkedin;
+  const githubCard = document.querySelector('#github');
+  githubCard.value = dataUser.github;
+  profileImage.style.backgroundImage = `url(${dataUser.photo})`;
+  profilePreview.style.backgroundImage = `url(${dataUser.photo})`;
+  fileField.setAttribute('value', dataUser.photo);
+  previewSection.classList.remove('palette1');
+  previewSection.classList.remove('palette2');
+  previewSection.classList.remove('palette3');
+  previewSection.classList.remove('palette4');
+  previewSection.classList.remove('palette5');
+  previewSection.classList.add(`palette${dataUser.palette}`);
   handleCardLinks();
   handlePreviewText();
 }
