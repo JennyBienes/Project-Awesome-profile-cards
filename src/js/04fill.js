@@ -87,7 +87,6 @@ for (const inputCardsLink of inputCardsLinks) {
 
 // funcion para pintar localStorage en la tarjeta de preview
 function paintCard(){
-    //debugger;
     const nameCard = document.querySelector('#name');
     nameCard.value = dataUser.name;
     const jobCard = document.querySelector('#job');
