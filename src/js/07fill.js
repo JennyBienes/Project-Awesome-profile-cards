@@ -87,7 +87,7 @@ for (const inputCardsLink of inputCardsLinks) {
 
 // funcion para pintar localStorage en la tarjeta de preview
 function paintCard(){
-  //debugger;
+    //debugger;
     const nameCard = document.querySelector('#name');
     nameCard.value = dataUser.name;
     const jobCard = document.querySelector('#job');
@@ -103,6 +103,10 @@ function paintCard(){
     profileImage.style.backgroundImage = `url(${dataUser.photo})`;
     profilePreview.style.backgroundImage = `url(${dataUser.photo})`;
     fileField.setAttribute('value', dataUser.photo);
+    previewSection.classList.remove("palette1");
+    previewSection.classList.remove("palette2");
+    previewSection.classList.remove("palette3");
+    previewSection.classList.add(`palette${dataUser.palette}`);
   handleCardLinks();
   handlePreviewText();
 }
